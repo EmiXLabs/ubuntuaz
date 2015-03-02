@@ -1,0 +1,17 @@
+  div.wrapper, div.inner-wrapper {  
+    width: auto;
+    max-width: none;
+  }
+
+  div.wrapper {
+    padding: 0px 0px;
+    clear: both;
+    display: inline;
+    float: left;
+    border: 0;
+    margin: 0;
+  }
+
+  #top-nav, header {
+    width: auto;
+  }
