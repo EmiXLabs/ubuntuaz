@@ -1,0 +1,1111 @@
+/*
+Main File for custom Template things
+*/
+* {
+  box-sizing: content-box;
+}
+body {
+    background: url("/static/ubuntu/img/image-background-paper.png") repeat-y center top #f7f7f7;
+    color: #333;
+    font-family: Ubuntu,  Arial,  "libra sans",  sans-serif;
+    font-weight: 300;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, ol, ul, li, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+html {
+    -moz-transition: background-position 100 ease;
+    -ms-text-size-adjust: 100%;
+    -o-transition: background-position 100 ease;
+    -webkit-text-size-adjust: 100%;
+    -webkit-transition: background-position 100 ease;
+    background: url("/static/ubuntu/img/image-background-paper.png") repeat-y fixed center top #f7f7f7;
+    font-size: 100%;
+    overflow-y: scroll;
+    text-size-adjust: 100%;
+    transition: background-position 100 ease;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #DD4814;
+}
+a:hover, a:focus {
+    color: #973B2C;
+}
+h3 a:hover {
+    text-decoration: underline;
+}
+.related-item a {
+    font-size: 17px;
+}
+header nav a:link {
+    font-weight: normal;
+}
+.wrapper, header.banner .nav-primary, nav div.footer-a div, .inline-lists ul, .legal {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: auto;
+}
+header.banner {
+    border-top: 0;
+    min-width: 100%;
+    width: auto;
+    background: #dd4814;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+header.banner .nav-primary {
+    border: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header.banner .nav-primary ul {
+    border-right: 1px solid #ed6637;
+    float: left;
+    margin: 0;
+    position: relative;
+}
+header.banner .nav-primary ul li {
+    border-left: 1px solid #c64012;
+    float: left;
+    list-style-image: none;
+    margin: 0;
+    text-indent: 0;
+    vertical-align: bottom;
+}
+header.banner .nav-primary ul li:last-child {
+    border-right: 1px solid #c64012;
+}
+header.banner .nav-primary ul li a:link, header.banner .nav-primary ul li a:visited {
+    font-size: 14px;
+    border-left: 1px solid #ec5b29;
+    color: #fff;
+    display: block;
+    margin-bottom: 0;
+    padding: 14px 14px 13px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-font-smoothing: subpixel-antialiased;
+    -o-font-smoothing: subpixel-antialiased;
+    font-smoothing: subpixel-antialiased;
+}
+header.banner .nav-primary ul a.active {
+    background: #B83A10;
+    border-left: 1px solid #ec5b29;
+}
+header.banner .nav-primary ul li a:hover {
+    background: #e1662f;
+    border-top: 0;
+    -moz-box-shadow: inset 0 2px 2px -2px #777;
+    -webkit-box-shadow: inset 0 2px 2px -2px #777;
+    box-shadow: inset 0 2px 2px -2px #777;
+}
+#main-navigation-link {
+    display: none;
+}
+header.banner .nav-toggle {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 48px;
+    height: 48px;
+    text-indent: -99999px;
+    background-image: url(//assets.ubuntu.com/sites/ubuntu/latest/u/img/icons/navigation-menu-plain.svg);
+    -moz-background-size: 25px auto;
+    -webkit-background-size: 25px auto;
+    -o-background-size: 25px auto;
+    background-size: 25px auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+header.banner .no-script {
+    display: none;
+}
+header.banner nav ul {
+    background-color: #f0f0f0;
+    display: none;
+    float: left;
+}
+header.banner .nav-primary.active {
+    -moz-box-shadow: 0 1px 2px 1px rgba(120, 120, 120, 0.2);
+    -webkit-box-shadow: 0 1px 2px 1px rgba(120, 120, 120, 0.2);
+    box-shadow: 0 1px 2px 1px rgba(120, 120, 120, 0.2);
+    padding: 0;
+    border-bottom: 1px solid #d4d7d4;
+}
+header nav ul.active {
+    display: block;
+}
+header.banner .nav-primary ul li, header.banner .nav-primary ul li a:link, header.banner .nav-primary ul li a:visited, header.banner .nav-primary ul li a:active {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+header.banner .nav-primary ul li a:hover {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #d0d0d0;
+}
+header.banner .nav-primary ul li a.active {
+    background-color: #ddd;
+}
+header.banner .nav-primary ul li {
+    border-bottom: 1px solid #F2F2F4;
+    font-size: 16px;
+}
+header.banner .nav-primary ul li:last-child {
+    border: 0;
+}
+header.banner nav.nav-primary ul li a:link, header.banner .nav-primary ul li a:visited, header.banner .nav-primary ul li a:hover, header.banner .nav-primary ul li a:active {
+    padding: 14px 14px 14px;
+    text-align: left;
+}
+header.banner nav.nav-primary ul.active li ul {
+    display: none;
+}
+#menu.active:after {
+    background-image: url(//assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/nav-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 26px;
+    content: "";
+    display: block;
+    height: 23px;
+    margin-left: 0;
+    padding-bottom: 17px;
+    position: relative;
+    top: -3px;
+    width: 48px;
+    z-index: 999;
+}
+html.no-svg #menu.active:after, .opera-mini #menu.active:after {
+    background-image: url(//assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/nav-arrow.png);
+}
+.nav-secondary {
+    border-bottom: 1px solid #dfdcd9;
+    margin-bottom: 0;
+}
+.nav-secondary ul {
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 2px;
+}
+.nav-secondary ul li {
+    float: left;
+    margin-top: 16px;
+    font-size: 14px;
+    margin-right: 15px;
+}
+.nav-secondary ul li a:link, .nav-secondary ul li a:visited {
+    color: #333;
+    font-size: 14px;
+    float: left;
+}
+.nav-secondary ul li a:hover, .nav-secondary ul li a:active {
+    color: #dd4814;
+    text-decoration: none;
+}
+.nav-secondary ul li, .nav-secondary ul li.active a:link, .nav-secondary ul li.active a:visited {
+    color: #dd4814;
+    text-decoration: none;
+}
+.nav-secondary ul.breadcrumb {
+    margin-left: 20px;
+}
+.nav-secondary ul.breadcrumb li, .nav-secondary ul.breadcrumb li a:link, .nav-secondary ul.breadcrumb li a:visited {
+    color: #888;
+    margin-right: 8px;
+}
+.nav-secondary ul.breadcrumb li.active a:link, .nav-secondary ul.breadcrumb li.active a:visited {
+    color: #dd4814;
+}
+header.banner h2 {
+    font-size: 1.7857142857em;
+    margin-bottom: 0.48em;
+    display: block;
+    left: 4px;
+    margin-bottom: 0;
+    position: relative;
+    text-transform: lowercase;
+    top: 14px;
+}
+header.banner h2 a:link, header.banner h2 a:visited, header.banner a {
+    color: #fff;
+    float: left;
+    text-decoration: none;
+}
+header.banner .logo {
+    border-left: 0;
+    float: left;
+    height: 48px;
+    overflow: hidden;
+}
+header.banner .logo-ubuntu {
+    background: url("/static/ubuntu/images/logo.png") no-repeat scroll 0 0px transparent;
+    font-size: 18px;
+    position: relative;
+    text-transform: lowercase;
+    float: left;
+    margin: 0px 10px 0px 0px;
+    display: inline-block;
+    height: 36px;
+    min-width: 36px;
+    padding: 0px;
+}
+header.banner .logo-ubuntu img {
+    margin-right: 8px;
+    position: absolute;
+    left: -999em;
+}
+header.banner .logo-ubuntu span {
+    float: left;
+    font-size: 23px;
+    font-weight: 300;
+    padding-left: 122px;
+    padding-right: 20px;
+    position: relative;
+    top: 5px;
+}
+header.banner .nav-primary.nav-left .logo-ubuntu {
+    float: right;
+}
+header.banner .nav-primary.nav-right .logo-ubuntu {
+    background-image: url("/static/ubuntu/images/logo.png");
+    background-size: 36px 36px;
+    float: left;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    margin-top: 3px;
+}
+html.no-svg header.banner .nav-primary.nav-right .logo-ubuntu, .opera-mini header.banner .nav-primary.nav-right .logo-ubuntu {
+    background-image: url("//assets.ubuntu.com/sites/ubuntu/latest/u/img/logos/logo-ubuntu-white.png");
+}
+@media only screen and (max-width: 295px) {
+    header.banner .nav-primary.nav-right .logo-ubuntu, header.banner .logo-ubuntu {
+    -moz-background-size: 20px 20px;
+    -webkit-background-size: 20px 20px;
+    -o-background-size: 20px 20px;
+    background-size: 20px 20px;
+    background: url("//assets.ubuntu.com/sites/ubuntu/latest/u/img/logos/logo-ubuntu_cof-white_orange-hex.svg") 0 50% no-repeat;
+    min-width: 0;
+    width: 38px;
+}
+header.banner .logo-ubuntu span {
+    padding-left: 38px;
+}
+}html.no-svg header.banner .logo-ubuntu, .opera-mini header.banner .logo-ubuntu {
+    background-image: url("//assets.ubuntu.com/sites/ubuntu/latest/u/img/logos/logo-ubuntu_cof-white_orange-hex.png");
+}
+@media only screen and (max-width: 768px) {
+    header.banner .nav-primary {
+    -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+header.banner .nav-primary.active {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 0;
+}
+header nav ul.active {
+    float: left;
+}
+header nav ul.active li:last-child a:link, header nav ul.active li:last-child a:visited {
+    border-bottom: 0;
+}
+header.banner .nav-primary ul {
+    position: relative;
+    width: 100%}
+header.banner .nav-primary ul li.active a:link, header.banner .nav-primary ul li.active a:visited {
+    color: #333;
+    font-weight: 700;
+}
+header.banner .nav-primary ul li, header.banner .nav-primary ul li a:link, header.banner .nav-primary ul li a:visited, header.banner .nav-primary ul li a:active {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    display: block;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    width: 100%}
+header.banner .nav-primary ul li a:link, header.banner .nav-primary ul li a:visited, header.banner .nav-primary ul li a:hover, header.banner .nav-primary ul li a:active {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #d4d7d4;
+    color: #333333;
+    font-size: 1em;
+}
+header.banner .nav-primary ul li:nth-last-child(-n+2) a:link, header.banner .nav-primary ul li:nth-last-child(-n+2) a:visited {
+    border: 0;
+}
+header.banner .nav-primary ul li a:hover {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #f8f8f8;
+}
+header.banner .nav-primary ul li a.active {
+    background-color: #ddd;
+}
+header.banner nav.nav-primary ul li a:link, header.banner .nav-primary ul li a:visited, header.banner .nav-primary ul li a:hover, header.banner .nav-primary ul li a:active {
+    padding: 8px 10px;
+    text-align: left;
+}
+header.banner .nav-primary ul li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: transparent;
+    border-bottom: 0;
+    border-right: 1px solid #d4d7d4;
+    float: left;
+    width: 50%}
+.nav-secondary {
+    background: #fff;
+}
+.nav-secondary ul.second-level-nav {
+    border-top: 1px solid #d4d7d4;
+    display: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%}
+.nav-secondary ul.second-level-nav li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0;
+    float: left;
+}
+.nav-secondary ul.second-level-nav li a, .nav-secondary ul.second-level-nav li a:link, .nav-secondary ul.second-level-nav li a:visited {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    padding: 10px 10px 10px 20px;
+    width: 100%}
+.nav-secondary ul.second-level-nav li.active a, .nav-secondary ul.second-level-nav li.active a:link, .nav-secondary ul.second-level-nav li.active a:visited {
+    color: #333;
+    font-weight: 700;
+}
+.nav-secondary ul.third-level-nav {
+    display: none;
+    margin-bottom: 0;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.nav-secondary ul.third-level-nav li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0;
+    float: left;
+    padding-left: 30px;
+}
+.nav-secondary ul.third-level-nav li a, .nav-secondary ul.third-level-nav li a:link, .nav-secondary ul.third-level-nav li a:visited {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 0;
+    display: block;
+    width: 100%;
+    height: 100%}
+.nav-secondary ul.third-level-nav li.active a, .nav-secondary ul.third-level-nav li.active a:link, .nav-secondary ul.third-level-nav li.active a:visited {
+    color: #333;
+    font-weight: 700;
+}
+.nav-secondary ul.third-level-nav li.single-link {
+    width: 100%}
+.nav-secondary ul.third-level-nav li:only-child {
+    width: 100%}
+.nav-secondary ul.breadcrumb {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+.nav-secondary ul.breadcrumb li:first-of-type {
+    border-bottom: 1px solid #d4d7d4;
+    margin-bottom: -1px;
+}
+.nav-secondary ul.breadcrumb li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    width: 100%;
+    display: block;
+    height: 40px;
+    margin: 0;
+}
+.nav-secondary ul.breadcrumb li a, .nav-secondary ul.breadcrumb li a:link, .nav-secondary ul.breadcrumb li a:visited {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 100%;
+    color: #333333;
+    display: block;
+    margin-right: 0;
+    text-decoration: none;
+    padding: 8px 10px 0 10px;
+}
+.nav-secondary ul.breadcrumb li.active {
+    margin-top: 12px;
+}
+.nav-secondary ul.breadcrumb li.active a, .nav-secondary ul.breadcrumb li.active a:link, .nav-secondary ul.breadcrumb li.active a:visited {
+    color: #333;
+    font-weight: 700;
+}
+.nav-secondary ul.breadcrumb li:nth-of-type(2n) {
+    margin-top: 12px;
+}
+.nav-secondary ul.breadcrumb li .after {
+    background-image: url(//assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/nav-down-arrow.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    float: right;
+    height: 18px;
+    margin-right: -5px;
+    margin-top: -6px;
+    padding: 10px;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 18px;
+}
+.nav-secondary ul.breadcrumb li+li {
+    display: none;
+}
+.nav-secondary ul.breadcrumb li+li a:link, .nav-secondary ul.breadcrumb li+li a:active, .nav-secondary ul.breadcrumb li+li a:visited {
+    padding-left: 20px;
+}
+.nav-secondary ul.breadcrumb li+li a.after {
+    background-image: none;
+}
+.nav-secondary.open ul.breadcrumb li a:after, .nav-secondary.open ul.breadcrumb li a:link:after, .nav-secondary.open ul.breadcrumb li a:visited:after {
+    background-image: url(//assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/nav-up-arrow.svg);
+}
+.nav-secondary.open ul.breadcrumb li+li a.after {
+    background-image: none;
+}
+.nav-secondary.open ul.breadcrumb li .after {
+    background-image: url(//assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/nav-up-arrow.svg);
+    margin-top: -7px;
+}
+.nav-secondary.open ul.second-level-nav, .nav-secondary.open ul.third-level-nav, .nav-secondary.open ul.breadcrumb li+li {
+    display: block;
+}
+.no-js .nav-secondary ul.second-level-nav {
+    display: block;
+}
+.no-js #main-navigation-link {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    width: 20px;
+    height: 28px;
+    z-index: 999;
+    text-indent: -999em;
+    display: block;
+}
+.no-js #main-navigation-link a {
+    background-image: url("//assets.ubuntu.com/sites/ubuntu/latest/u/img/icons/navigation-menu-plain.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    display: block;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+}
+html.no-svg .nav-secondary ul.breadcrumb li .after, .opera-mini .nav-secondary ul.breadcrumb li .after {
+    background-image: url(//assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/nav-down-arrow.png);
+}
+html.no-svg .nav-secondary ul.breadcrumb.open ul.breadcrumb li a:after, html.no-svg .nav-secondary ul.breadcrumb.open ul.breadcrumb li a:link:after, html.no-svg .nav-secondary ul.breadcrumb.open ul.breadcrumb li a:visited:after, .opera-mini .nav-secondary ul.breadcrumb.open ul.breadcrumb li a:after, .opera-mini .nav-secondary ul.breadcrumb.open ul.breadcrumb li a:link:after, .opera-mini .nav-secondary ul.breadcrumb.open ul.breadcrumb li a:visited:after {
+    background-image: url(//assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/nav-up-arrow.png);
+}
+html.no-svg .nav-secondary ul.breadcrumb.open ul.breadcrumb li .after, .opera-mini .nav-secondary ul.breadcrumb.open ul.breadcrumb li .after {
+    background-image: url(//assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/nav-up-arrow.png);
+}
+html.no-svg header.banner .nav-primary #google-appliance-search-form button[type="submit"], .opera-mini header.banner .nav-primary #google-appliance-search-form button[type="submit"] {
+    background-image: url("//assets.ubuntu.com/sites/ubuntu/latest/u/img/search-black.png");
+}
+html.no-svg .nav-secondary ul.breadcrumb li .after, .opera-mini .nav-secondary ul.breadcrumb li .after {
+    background-image: url(//assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/nav-down-arrow.png);
+}
+html.no-svg .nav-secondary ul.breadcrumb.open ul.breadcrumb li a:after, html.no-svg .nav-secondary ul.breadcrumb.open ul.breadcrumb li a:link:after, html.no-svg .nav-secondary ul.breadcrumb.open ul.breadcrumb li a:visited:after, .opera-mini .nav-secondary ul.breadcrumb.open ul.breadcrumb li a:after, .opera-mini .nav-secondary ul.breadcrumb.open ul.breadcrumb li a:link:after, .opera-mini .nav-secondary ul.breadcrumb.open ul.breadcrumb li a:visited:after {
+    background-image: url(//assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/nav-up-arrow.png);
+}
+html.no-svg .nav-secondary ul.breadcrumb.open ul.breadcrumb li .after, .opera-mini .nav-secondary ul.breadcrumb.open ul.breadcrumb li .after {
+    background-image: url(//assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/nav-up-arrow.png);
+}
+html.no-svg header.banner .nav-primary #google-appliance-search-form button[type="submit"], .opera-mini header.banner .nav-primary #google-appliance-search-form button[type="submit"] {
+    background-image: url("//assets.ubuntu.com/sites/ubuntu/latest/u/img/search-black.png");
+}
+header.banner .nav-toggle {
+    background-image: url("//assets.ubuntu.com/sites/ubuntu/latest/u/img/icons/navigation-menu-plain.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    cursor: pointer;
+    display: block;
+    height: 48px;
+    position: absolute;
+    right: 0;
+    text-indent: -99999px;
+    width: 48px;
+}
+html.no-svg header.banner .nav-toggle, .opera-mini header.banner .nav-toggle {
+    background-image: url("//assets.ubuntu.com/sites/ubuntu/latest/u/img/icons/navigation-menu-plain.png");
+}
+}@media only screen and (min-width: 768px) {
+    header.banner .nav-primary ul li {
+    border-bottom: 0;
+}
+}@media only screen and (min-width: 769px) {
+    header.banner {
+    -moz-box-shadow: 0 2px 2px -2px #777777 inset,  2px 1px #FFFFFF;
+    -webkit-box-shadow: 0 2px 2px -2px #777777 inset,  2px 1px #FFFFFF;
+    box-shadow: 0 2px 2px -2px #777777 inset,  2px 1px #FFFFFF;
+}
+header.banner nav.nav-primary {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 0;
+}
+header.banner .nav-toggle {
+    display: none;
+}
+header.banner nav ul {
+    background-color: transparent;
+    display: block;
+}
+header.banner .nav-primary ul li {
+    border-left: 1px solid #C64012;
+}
+header.banner .nav-primary ul li a:active, header.banner .nav-primary ul li a:hover, header.banner .nav-primary ul li a:visited, header.banner nav.nav-primary ul li a:link {
+    border-left: 1px solid #EC5B29;
+}
+header.banner .nav-primary ul li:last-child {
+    border-right: 1px solid #C64012;
+    border-left: 1px solid #C64012;
+}
+header.banner .nav-primary ul li a.active {
+    background-color: #B83A10;
+}
+header.banner .nav-primary ul li a:hover {
+    background-color: #E1662F;
+}
+.nav-secondary ul:last-child li:last-child {
+    padding-bottom: 10px;
+}
+.nav-secondary ul.breadcrumb li, .nav-secondary ul.second-level-nav li, .nav-secondary ul.third-level-nav li {
+    margin-right: 15px;
+}
+.nav-secondary ul.breadcrumb {
+    float: left;
+}
+.nav-secondary ul.breadcrumb li {
+    margin-bottom: 10px;
+}
+.nav-secondary ul {
+    float: none;
+    margin-bottom: 0;
+}
+.nav-secondary ul li {
+    margin-bottom: 5px;
+}
+}@media only screen and (min-width: 984px) {
+    header.banner {
+    margin-bottom: 0px;
+}
+header.banner nav.nav-primary ul {
+    display: block;
+}
+header.banner .nav-primary, #nav-global .nav-global-wrapper {
+    width: 984px;
+}
+header.banner .nav-primary.nav-right .logo-ubuntu {
+    margin-left: 0;
+}
+}header.banner .nav-primary ul {
+    position: static;
+}
+header.banner .nav-primary li ul {
+    -moz-box-shadow: 0 2px 2px -1px #777;
+    -webkit-box-shadow: 0 2px 2px -1px #777;
+    box-shadow: 0 2px 2px -1px #777;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #f7f7f7;
+    border: 1px solid #d5d5d5;
+    display: none;
+    float: none;
+    margin: 0;
+    padding: 5px 0;
+    position: absolute;
+    top: 51px;
+    width: 200px;
+}
+header.banner .nav-primary li:hover ul:after {
+    background: url("//assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/arrow-up-smaller.png") no-repeat;
+    content: '';
+    display: block;
+    height: 8px;
+    left: 20px;
+    position: relative;
+    top: -13px;
+    width: 200px;
+    z-index: 999;
+}
+.no-generatedcontent header.banner .nav-primary li ul {
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+    top: 48px;
+}
+header.banner .nav-primary li ul .arrow-up {
+    display: none;
+}
+header.banner .nav-primary li ul li {
+    border: 0;
+    float: none;
+}
+header.banner .nav-primary li ul li a:link, header.banner .nav-primary li ul li a:visited {
+    border: 0;
+    color: #333333;
+    padding: 0 0 11px 14px;
+    text-align: left;
+    width: 170px;
+}
+header.banner .nav-primary li ul li a:hover {
+    background: none repeat scroll 0 0 transparent;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #DD4814;
+}
+header.banner .nav-primary li ul li.first a:link, header.banner .nav-primary li ul li.first a:visited, header.banner .nav-primary li ul li:first-of-type a:link {
+    padding: 10px 14px;
+}
+header.banner .nav-primary li ul li.active a:link, header.banner .nav-primary li ul li.active a:visited {
+    background: none repeat scroll 0 0 transparent !important;
+}
+header.banner .nav-primary li ul .promo {
+    border-top: 1px solid #D5D5D5;
+    float: left;
+    margin-top: 5px;
+    padding: 15px 0 0;
+}
+header.banner .nav-primary li ul .promo a:link, header.banner .nav-primary li ul .promo a:visited {
+    background: none repeat scroll 0 0 transparent;
+    border-left: 0 none;
+    color: #333333;
+    height: auto;
+    padding: 0;
+    text-align: left;
+}
+header.banner .nav-primary li ul .promo p {
+    margin: 0 10px;
+}
+header.banner .nav-primary li ul .promo a:hover {
+    box-shadow: none;
+    color: #DD4814;
+}
+header.banner .nav-primary li ul .promo img {
+    margin-top: 14px;
+    margin-bottom: -6px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    top: 1px;
+}
+header.banner .nav-primary li ul .promo .category {
+    color: #888;
+    font-size: 11px;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+header.banner .nav-primary li:hover ul {
+  display: block;
+}
+html.lt-ie8 header.banner .nav-primary li:hover ul {
+  display: none;
+}
+.navbar-right {
+  margin-right: 0px;
+}
+.navbar-form {
+  margin: 10px 0px;
+}
+.form-control {
+  color: #FFF;
+  text-align: center;
+}
+.form-control::-webkit-input-placeholder {
+ color: #FFF;
+}
+.form-control:-moz-placeholder {
+ color: #FFF;
+}
+.form-control::-moz-placeholder {
+ color: #FFF;
+}
+.form-control:-ms-input-placeholder {
+ color: #FFF;
+}
+.panel-primary > .panel-heading {
+  background: #DD4814 none repeat scroll 0% 0%;
+  color: #FFF;
+}
+.wrapper {
+  background: transparent none repeat scroll 0% 0%;
+  box-sizing: border-box;
+  margin: 0px auto;
+  position: relative;
+  text-align: left;
+  clear: both;
+}
+.clearfix {
+  display: block;
+}
+#main-content {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.inner-wrapper {
+  border-radius: 2px;
+  background: transparent none repeat scroll 0% 0%;
+  border: 0px none;
+  box-shadow: none;
+  margin-top: 0px;
+  padding: 0px;
+  margin: 10px 0px 30px;
+  box-sizing: border-box;
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+body.single .row {
+  padding-top: 10px;
+}
+.row:last-of-type {
+  border: 0px none;
+}
+.row {
+  padding: 30px 30px 20px;
+  clear: both;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  border-radius: 0px;
+  margin: 0px;
+}
+.row .inner-wrapper {
+  display: block;
+  float: none;
+  margin: 0px auto;
+  width: 984px;
+}
+#main-content .eight-col {
+  margin-bottom: 20px;
+  margin-right: 2.128%;
+  transition-duration: 0.5s;
+  width: 70.0%;
+  float: left;
+  box-sizing: border-box;
+  clear: none;
+  display: inline-block;
+  padding: 0px;
+  position: relative;
+}
+.eight-col .eight-col {
+  width: 100%;
+  margin-right: 0px;
+}
+.box {
+  background: rgba(255, 255, 255, 0.7) none repeat scroll 0% 0%;
+  border-radius: 4px;
+  padding: 1.333em 20px;
+}
+.box-highlight {
+  box-shadow: 0px 2px 2px 0px #C2C2C2;
+}
+.four-col {
+  margin-bottom: 20px;
+  transition-duration: 0.5s;
+  width: 27.8723%;
+  float: left;
+  box-sizing: border-box;
+  clear: none;
+  display: inline-block;
+  padding: 0px;
+  position: relative;
+}
+.last-col {
+  margin-right: 0px;
+}
+.subheader h1 {
+  color: #333;
+  font-size: 15px;
+  margin: 5px 0px 5px 15px;
+  font-weight: normal;
+  line-height: 21px;
+  float: left;
+}
+.subheader #tabs {
+  float: right;
+  margin: 0px 20px;
+}
+.subheader {
+  clear: both;
+  height: 40px;
+  margin-bottom: 0px;
+  background-color: #EEE;
+  padding-top: 5px;
+  overflow-y: hidden;
+}
+.question-list {
+  margin-bottom: 30px;
+  overflow: visible !important;
+}
+.question-summary {
+  overflow: hidden;
+  float: left;
+  border-bottom: 1px solid #EDEDED;
+  border-top: 1px solid #FFF;
+  padding: 11px 0px 10px;
+  width: 688px;
+}
+.cp {
+  cursor: pointer;
+}
+.status {
+  text-align: center;
+}
+.narrow .status {
+  padding: 5px;
+  float: left;
+  margin: 0px 3px 0px 0px;
+  width: 48px;
+  height: 38px;
+}
+.narrow .summary {
+  width: 550px;
+  float: left;
+}
+.narrow .started {
+    width: auto;
+    line-height: inherit;
+    padding-top: 4px;
+    white-space: nowrap;
+    float: right;
+    color: #999;
+}
+.started-link {
+    color: #999;
+}
+.summary h3 {
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.question-hyperlink {
+  color: #333;
+  line-height: 1.3;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+}
+.answered {
+  color: #333;
+}
+.unanswered {
+  color: #222;
+}
+.stats .answered strong, .stats .unanswered strong, .stats .answered-accepted strong, .answered-accepted .mini-counts, .answered .mini-counts, .unanswered .mini-counts {
+  font-size: 16px;
+  line-height: 32px;
+  padding: 2px 0px 4px;
+  border-radius: 22px;
+  height: 32px;
+  width: 40px;
+  margin: -10px auto 2px;
+}
+.answered .mini-counts {
+  background-color: #E8E7E5;
+  color: #DD4814 !important;
+}
+.unanswered .mini-counts {
+  background-color: #DD4814;
+  color: #FFF !important;
+}
+.tags {
+    line-height: 18px;
+    float: left;
+}
+.post-tag {
+    height: 14px;
+    font-size: 11px;
+    vertical-align: middle;
+    display: inline-block;
+    color: #5E5E5E;
+    text-decoration: none;
+    padding: 3px 5px 2px 19px;
+    white-space: nowrap;
+    background-position: 0px -8px;
+    margin: 2px 2px 6px 0px;
+    line-height: 12px;
+}
+.post-tag, .moderator-tag, .required-tag, #notify-container span.notify-close {
+    background-image: url("/static/ubuntu/img/sprites.png?v=1.0");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-color: transparent;
+}
+.btn-load-all {
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.12), 0px 1px 6px 0px rgba(0, 0, 0, 0.12);
+  width: 90%;
+  background: #DD4814 none repeat scroll 0% 0%;
+  color: #FFF;
+  text-decoration: none;
+  position: relative;
+  padding: 8px 30px;
+  border: 0px none;
+  margin: 15px 5px 1px 5px;
+  cursor: pointer;
+  border-radius: 2px;
+  text-transform: uppercase;
+  transition: background 0.2s ease 0s, box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  outline: medium none !important;
+  display: block;
+  font-size: 18px;
+  line-height: 1.33333;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -moz-user-select: none;
+  float: left;
+}
+.btn-load-all:hover {
+  text-decoration: none;
+  color: #77216F;
+}
+.panel-heading {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.badge {
+  background: #FFF none repeat scroll 0% 0%;
+  color: #DD4814;
+}
+.badge:hover {
+  background: #77216F none repeat scroll 0% 0%;
+}
+.twelve-col {
+  float: left;
+  width: 100%;
+  margin-right: 0px;
+  box-sizing: border-box;
+  clear: none;
+  display: inline-block;
+  float: none;
+  margin-right: 2.12766%;
+  margin-bottom: 20px;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+  line-height: 1.5;
+  margin: 0px 0px 0.75em;
+}
+.twelve-col .twelve-col {
+  width: 100%;
+  margin-right: 0px;
+}
+footer.global {
+  margin-bottom: 20px;
+  margin-right: 0px;
+  position: relative;
+  width: 100%;
+  box-shadow: 0px 2px 2px -1px #D3D3D3 inset;
+  background: transparent none repeat scroll 0% 0%;
+  border-top: 0px none;
+  clear: both;
+  display: block;
+  padding: 30px 0px 20px;
+  padding-top: 40px;
+}
+footer.global .legal {
+  margin: 0px auto;
+  position: relative;
+  clear: both;
+  min-height: 40px;
+  width: 984px;
+  background: transparent url("/static/ubuntu/img/logo-ubuntu-az-small.png") no-repeat scroll 100% 0px;
+}
+footer.global .legal p, footer.global .legal ul {
+  padding-left: 0px;
+}
+footer.global p, footer.global ul.inline li a {
+  color: #333;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+footer.global ul.inline li::after {
+  content: "•";
+  color: #888;
+  vertical-align: middle;
+  margin: 0px 5px;
+}
+footer.global ul.inline li:last-child::after {
+    content: "";
+}
+footer.global ul {
+  margin: 0px;
+}
+footer.global .inline li {
+  display: inline;
+  float: left;
+  margin-bottom: 0px;
+  list-style: outside none none;
+  margin-left: 0px;
+  line-height: 1.5;
+}
+.panel-body ul {
+    list-style-type: square;
+    margin-left: 7px;
+}
