@@ -3,3 +3,5 @@ Django==1.6.11
 pytz
 python-memcached
 django_compressor
+psycopg2
+south

@@ -835,8 +835,24 @@ body.single .row {
   display: block;
   float: none;
   margin: 0px auto;
-  width: 984px;
 }
+/* Large desktop */
+@media (min-width: 1200px) {
+    .row .inner-wrapper {
+        width: 984px;
+    }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    .row .inner-wrapper {
+        width: 984px;
+    }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {  }
+/* Landscape phones and down */
+@media (max-width: 480px) {  }
+
 .one-col, .two-col, .three-col, .four-col, .five-col, .six-col, .seven-col, .eight-col, .nine-col, .ten-col, .eleven-col, .twelve-col, .col {
     box-sizing: border-box;
     clear: none;
@@ -1220,7 +1236,7 @@ footer.global .inline li {
     background: transparent url("/static/images/home/laptop-dev.jpg") no-repeat scroll 350px 10px;
     background-color: #FFF;
     padding-left: 40px;
-    height: 416px;
+    /*height: 416px;*/
 }
 .home-title {
     font-size: 2.8125em;
