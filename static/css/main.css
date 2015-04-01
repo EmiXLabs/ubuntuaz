@@ -1231,6 +1231,7 @@ footer.global .inline li {
     margin-bottom: 40px;
     font-size: 1.25em;
     line-height: 1.4;
+    padding-right: 40px;
 }
 .share-this {
     margin-top: 40px;
@@ -1250,4 +1251,7 @@ footer.global .inline li {
 }
 .six-col {
     width: 48.9362%;
+}
+.two-col {
+    width: 22.894%;
 }

@@ -1,5 +1,5 @@
-# Mozilla Azerbaijan Community Website.
-# Copyright (C) 2015 Mozilla Azerbaijan
+# Ubuntu Azerbaijan Community Website.
+# Copyright (C) 2015 Ubuntu Azerbaijan LoCo
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mezzanine\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-22 02:09+0200\n"
+"POT-Creation-Date: 2015-04-01 11:20+0300\n"
 "PO-Revision-Date: 2015-01-25 23:38+0200\n"
 "Last-Translator: Emin Mastizada <emin@mastizada.com>\n"
 "Language-Team: Azerbaijani <az@li.org>\n"
@@ -17,46 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#: utils/timesince.py:24
-#, python-format
-msgid "%d year"
-msgid_plural "%d years"
-msgstr[0] "%d il"
-
-#: utils/timesince.py:25
-#, python-format
-msgid "%d month"
-msgid_plural "%d months"
-msgstr[0] "%d ay"
-
-#: utils/timesince.py:26
-#, python-format
-msgid "%d week"
-msgid_plural "%d weeks"
-msgstr[0] "%d həftə"
-
-#: utils/timesince.py:27
-#, python-format
-msgid "%d day"
-msgid_plural "%d days"
-msgstr[0] "%d gün"
-
-#: utils/timesince.py:28
-#, python-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] "%d saat"
-
-#: utils/timesince.py:29
-#, python-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] "%d dəqiqə"
-
-#: utils/timesince.py:45
-msgid "0 minutes"
-msgstr "0 dəqiqə"
 
 #: models.py:68 models.py:116
 msgid "Title"
@@ -136,11 +96,11 @@ msgstr ""
 
 #: models.py:322
 msgid "Content"
-msgstr ""
+msgstr "Məzmun"
 
 #: models.py:362
 msgid "Order"
-msgstr ""
+msgstr "Sıralama"
 
 #: models.py:447 models.py:467
 msgid "Author"
@@ -158,88 +118,79 @@ msgstr ""
 msgid "Site permissions"
 msgstr ""
 
-#: settings.py:120
+#: settings.py:122
 msgid "English"
 msgstr "İngilizcə"
 
-#: settings.py:121
+#: settings.py:123
 msgid "Azerbaijani"
 msgstr "Azərbaycanca"
 
-#: templates/base.html:86
-msgid "Toggle navigation"
-msgstr "Naviqasiyanı keçir"
+#: templates/base.html:69 templates/blog/blog_post_list.html:4
+#: templates/blog/blog_post_list.html:22 templates/blog/blog_post_list.html:77
+msgid "Blog"
+msgstr "Bloq"
+
+#: templates/base.html:70
+msgid "Ask"
+msgstr "Ask"
+
+#: templates/base.html:71
+msgid "About"
+msgstr "Haqqımızda"
+
+#: templates/base.html:72
+msgid "Products"
+msgstr "Məhsullar"
+
+#: templates/base.html:73
+msgid "Download"
+msgstr "Endir"
+
+#: templates/base.html:78 templates/includes/search_form.html:5
+msgid "Search"
+msgstr "Axtar"
 
 #: templates/index.html:3 templates/index.html.py:4
 #: templates/search_results.html:13 templates/pages/menus/breadcrumb.html:4
-#: templates/pages/menus/breadcrumb.html:10
-#: templates/pages/menus/dropdown.html:11
+#: templates/pages/menus/breadcrumb.html:9
 #: templates/pages/menus/footer_tree.html:11
 #: templates/pages/menus/mobile.html:10 templates/pages/menus/primary.html:8
 #: templates/pages/menus/tree.html:9
 msgid "Home"
 msgstr "Ana Səhifə"
 
-#: templates/index.html:23
-msgid "Firefox: The independent choice"
-msgstr "Firefox: Azad seçim"
+#: templates/index.html:15
+msgid "Meet Ubuntu"
+msgstr "Ubuntu ilə tanış olun"
 
-#: templates/index.html:24
-msgid "Help us celebrate 10 years of choice and independence online."
-msgstr "Onlayn seçimin və azadlığın 10 illiyini qeyd etməkdə bizə kömək edin."
-
-#: templates/index.html:25 templates/index.html.py:62 templates/index.html:76
-#: templates/pages/index.html:34 templates/pages/index.html.py:52
-msgid "Learn More"
-msgstr "Ətraflı Öyrən"
-
-#: templates/index.html:56
-msgid "Choose Independent, Choose Firefox"
-msgstr "Azadlığı Seç, Firefox-u Seç"
-
-#: templates/index.html:58
-msgid "Most Trusted Internet Company For Privacy"
-msgstr "Məxfilikdə Ən Güvənli İnternet Şirkəti"
-
-#: templates/index.html:73
-msgid "Firefox Hello - As easy as saying hello"
-msgstr "Firefox Hello - Salam demək qədər asan"
-
-#: templates/index.html:74
+#: templates/index.html:16
 msgid ""
-"Meet Firefox Hello, the easiest way to connect for free over video with "
-"anyone, anywhere."
+"Fast, free and incredibly easy to use, the Ubuntu operating system powers "
+"millions of desktop PCs, laptops and servers around the world."
 msgstr ""
-"Firefox Hello ilə tanış olun, hər kəslə, hər yerdə pulsuz video ilə "
-"bağlanmanın ən asan yolu."
+"Sürətli, pulsuz və istifadəsi çox sadə olan Ubuntu Əməliyyat Sistemi bütün "
+"dünyada milyonlarla masaüstü kompüter, laptop və serverlərə güc verir."
 
-#: templates/index.html:94
-msgid "Firefox Desktop"
-msgstr "Masaüstü üçün Firefox"
+#: templates/index.html:18
+msgid "Get Ubuntu now"
+msgstr "Ubuntu Endir"
 
-#: templates/index.html:94
-msgid "Get it free on Mozilla"
-msgstr "Mozilladan Endir"
+#: templates/index.html:23
+msgid "Tweet"
+msgstr "Tvitlə"
 
-#: templates/index.html:96
-msgid "Firefox for Android"
-msgstr "Android üçün Firefox"
-
-#: templates/index.html:96
-msgid "Get it on Google Play"
-msgstr "Google Playdə"
-
-#: templates/index.html:104
+#: templates/index.html:35
 msgid "Latest Posts"
 msgstr "Son Yazılarımız"
 
-#: templates/index.html:105
-msgid "Mozilla Azerbaijan News"
-msgstr "Mozilla Azərbaycan Xəbərləri"
+#: templates/index.html:36
+msgid "Ubuntu Azerbaijan LoCo News"
+msgstr "Ubuntu Azerbaijan LoCo Xəbərləri"
 
-#: templates/index.html:105
-msgid "Information for media is available in our media page."
-msgstr "Bütün yazılarımız üçün Bloq bölməsinə baxın."
+#: templates/index.html:37
+msgid "Latest news releated to Ubuntu Linux."
+msgstr "Ən son Ubuntu Linux ilə bağlı xəbərlər."
 
 #: templates/search_results.html:5 templates/search_results.html.py:6
 #: templates/search_results.html:15
@@ -266,129 +217,55 @@ msgstr ""
 "%(query)s sorğunuza uyğun %(search_type)s bölümündəki %(total)s nəticədən "
 "%(start)s / %(end)s göstərilir\n"
 
-#: templates/search_results.html:37 templates/blog/blog_post_list.html:152
+#: templates/search_results.html:37
 msgid "read more"
 msgstr "ətraflı oxu"
 
-#: templates/accounts/account_login.html:7
-msgid ""
-"You're already logged in. If you'd like to log in as a different user, "
-"you'll need to log out first."
-msgstr ""
-
-#: templates/accounts/account_login.html:11
-#, python-format
-msgid ""
-"If you don't have an account you can <a href=\"%(signup_url)s?next=%(next)s"
-"\">sign up</a> for one now."
-msgstr ""
-
-#: templates/accounts/account_login.html:14
-#, python-format
-msgid ""
-"<p>You can also <a href=\"%(password_reset_url)s?next=%(profile_update_url)s"
-"\">reset your password</a> if you've forgotten it.</p>"
-msgstr ""
-
-#: templates/accounts/account_password_reset.html:6
-msgid ""
-"Enter your username or email address and you'll receive an email with a link "
-"you need to click, in order to log in and change your password."
-msgstr ""
-
-#: templates/accounts/account_profile.html:18
-#: templates/accounts/includes/user_panel.html:12
-msgid "Update profile"
-msgstr ""
-
-#: templates/accounts/account_signup.html:7
-msgid ""
-"You're already logged in. If you'd like to create a new account, you'll need "
-"to log out first."
-msgstr ""
-
-#: templates/accounts/account_signup.html:11
-msgid ""
-"After signing up, your account will be reviewed for approval. You'll receive "
-"an email when your account is activated."
-msgstr ""
-
-#: templates/accounts/account_signup.html:13
-msgid ""
-"After signing up, you'll receive an email with a link you need to click, in "
-"order to activate your account."
-msgstr ""
-
-#: templates/accounts/includes/user_panel.html:22
-#: templates/accounts/includes/user_panel_nav.html:11
-#: templates/includes/editable_toolbar.html:9
-msgid "Log out"
-msgstr "Çıxış"
-
-#: templates/accounts/includes/user_panel.html:27
-#: templates/accounts/includes/user_panel_nav.html:14
-msgid "Log in"
-msgstr "Daxil ol"
-
-#: templates/accounts/includes/user_panel.html:30
-#: templates/accounts/includes/user_panel_nav.html:16
-msgid "Sign up"
-msgstr "Qeydiyyat"
-
-#: templates/blog/blog_post_detail.html:53
-#: templates/blog/blog_post_list.html:114
+#: templates/blog/blog_post_detail.html:56
 msgid "in"
-msgstr ""
+msgstr ":"
 
-#: templates/blog/blog_post_detail.html:61
-#: templates/blog/blog_post_list.html:122
+#: templates/blog/blog_post_detail.html:63
 #: templates/generic/includes/comment.html:23
 #: templates/generic/includes/comment.html:43
-#: templates/generic/includes/comment.html:82 templates/twitter/tweets.html:19
+#: templates/generic/includes/comment.html:82
 #, python-format
 msgid "%(sometime)s ago"
 msgstr "%(sometime)s əvvəl"
 
-#: templates/blog/blog_post_detail.html:68
-#: templates/blog/blog_post_list.html:129
+#: templates/blog/blog_post_detail.html:69
 #: templates/generic/includes/comments.html:3
 msgid "Comments"
 msgstr "Şərhlər"
 
-#: templates/blog/blog_post_detail.html:72
-#: templates/blog/blog_post_list.html:133
+#: templates/blog/blog_post_detail.html:73
 #, python-format
 msgid "%(comments_count)s comment"
 msgid_plural "%(comments_count)s comments"
 msgstr[0] "%(comments_count)s şərh"
 msgstr[1] "%(comments_count)s şərh"
 
-#: templates/blog/blog_post_detail.html:95
-#: templates/blog/blog_post_list.html:157
-#: templates/blog/includes/filter_panel.html:59
+#: templates/blog/blog_post_detail.html:90
+#: templates/blog/includes/filter_panel.html:75
 msgid "Tags"
-msgstr "Teqlər"
+msgstr "İşarətlər"
 
-#: templates/blog/blog_post_detail.html:119
-#, fuzzy
-msgid "Share on Twitter"
-msgstr "Twitterdə Paylaş"
-
-#: templates/blog/blog_post_detail.html:120
+#: templates/blog/blog_post_detail.html:112
 msgid "Share on Facebook"
 msgstr "Facebookda Paylaş"
 
-#: templates/blog/blog_post_detail.html:155
-msgid "Related posts"
-msgstr "Bağlı yazılar"
+#: templates/blog/blog_post_detail.html:113
+#, fuzzy
+msgid "Twitter"
+msgstr "Twitterdə Paylaş"
 
-#: templates/blog/blog_post_list.html:4 templates/blog/blog_post_list.html:22
-msgid "Blog"
-msgstr "Bloq"
+#: templates/blog/blog_post_detail.html:145
+msgid "Related posts"
+msgstr "Əlaqəli yazılar"
 
 #: templates/blog/blog_post_list.html:31
 msgid "Tag:"
-msgstr "Teq:"
+msgstr "İşarət:"
 
 #: templates/blog/blog_post_list.html:33
 msgid "Category:"
@@ -398,74 +275,72 @@ msgstr "Kateqoriya:"
 msgid "Author:"
 msgstr "Yazar:"
 
+#: templates/blog/blog_post_list.html:56
+msgid "Posts tagged"
+msgstr "İşarətlənmiş yazılar"
+
+#: templates/blog/blog_post_list.html:58
+msgid "Posts for the category"
+msgstr "Kateqoriyaya görə yazılar"
+
 #: templates/blog/blog_post_list.html:60
-msgid "Viewing posts tagged"
-msgstr ""
+msgid "Posts from"
+msgstr "Başlanğıc"
 
-#: templates/blog/blog_post_list.html:62
-msgid "Viewing posts for the category"
-msgstr ""
+#: templates/blog/blog_post_list.html:63
+msgid "Posts by"
+msgstr "Son"
 
-#: templates/blog/blog_post_list.html:64
-msgid "Viewing posts from"
-msgstr ""
+#: templates/blog/blog_post_list.html:83
+msgid "Ubuntu OS"
+msgstr "Ubuntu ƏS"
 
-#: templates/blog/blog_post_list.html:67
-msgid "Viewing posts by"
-msgstr ""
+#: templates/blog/blog_post_list.html:86
+msgid "Touch"
+msgstr "Touch"
 
-#: templates/blog/includes/filter_panel.html:6
+#: templates/blog/blog_post_list.html:89
+msgid "LoCo"
+msgstr "LoCo"
+
+#: templates/blog/blog_post_list.html:125
+msgid "Continue reading"
+msgstr "Davamını oxu"
+
+#: templates/blog/blog_post_list.html:143
+#, fuzzy, python-format
+msgid "%(sometime)s"
+msgstr "%(sometime)s əvvəl"
+
+#: templates/blog/includes/filter_panel.html:8
 msgid "Recent Posts"
 msgstr "Son Yazılar"
 
-#: templates/blog/includes/filter_panel.html:19
+#: templates/blog/includes/filter_panel.html:28
 msgid "Archive"
 msgstr "Arxiv"
 
-#: templates/blog/includes/filter_panel.html:36
+#: templates/blog/includes/filter_panel.html:54
 msgid "Categories"
 msgstr "Kateqoriyalar"
 
-#: templates/blog/includes/filter_panel.html:76
-msgid "Authors"
-msgstr "Yazarlar"
-
-#: templates/blog/includes/filter_panel.html:88
+#: templates/blog/includes/filter_panel.html:120
 msgid "Feeds"
 msgstr "Axın"
 
-#: templates/blog/includes/filter_panel.html:90
-#: templates/blog/includes/filter_panel.html:94
-#: templates/blog/includes/filter_panel.html:98
-#: templates/blog/includes/filter_panel.html:102
+#: templates/blog/includes/filter_panel.html:124
+#: templates/blog/includes/filter_panel.html:128
+#: templates/blog/includes/filter_panel.html:132
+#: templates/blog/includes/filter_panel.html:136
 msgid "RSS"
 msgstr "RSS"
 
-#: templates/blog/includes/filter_panel.html:91
-#: templates/blog/includes/filter_panel.html:95
-#: templates/blog/includes/filter_panel.html:99
-#: templates/blog/includes/filter_panel.html:103
+#: templates/blog/includes/filter_panel.html:125
+#: templates/blog/includes/filter_panel.html:129
+#: templates/blog/includes/filter_panel.html:133
+#: templates/blog/includes/filter_panel.html:137
 msgid "Atom"
 msgstr "Atom"
-
-#: templates/email/comment_notification.html:6
-msgid "A new comment has been posted on"
-msgstr "Yeni şərh əlavə edildi:"
-
-#: templates/email/comment_notification.html:10
-#, python-format
-msgid ""
-"\n"
-"    At %(submit_date)s %(user_name)s wrote:\n"
-"    "
-msgstr ""
-
-#: templates/email/comment_notification.txt:7
-#, python-format
-msgid ""
-"\n"
-"At %(submit_date)s %(user_name)s wrote:\n"
-msgstr ""
 
 #: templates/errors/404.html:6 templates/errors/404.html.py:10
 #: templates/errors/404.html:15
@@ -492,8 +367,8 @@ msgid ""
 "Sorry, something crashed. We will analyse that as soon as possible. Happy "
 "Browsing..."
 msgstr ""
-"Üzv istəyirik, gözlənilməz xəta baş verdi. Tez bir zamanda bunu təhlil "
-"edəcik. Xoş səyahətlər..."
+"Bağışlayın, gözlənilməz xəta baş verdi. Tez bir zamanda bunu təhlil edəcik. "
+"Xoş səyahətlər..."
 
 #: templates/generic/includes/comment.html:25
 #: templates/generic/includes/comment.html:45
@@ -503,7 +378,7 @@ msgstr "Cavabla"
 
 #: templates/generic/includes/comment.html:54
 msgid "Link"
-msgstr "Bağlantı"
+msgstr "Keçid"
 
 #: templates/generic/includes/comment.html:78
 msgid "Comment deleted"
@@ -549,6 +424,10 @@ msgstr "Düzəlt"
 msgid "Admin"
 msgstr "Admin"
 
+#: templates/includes/editable_toolbar.html:9
+msgid "Log out"
+msgstr "Çıxış"
+
 #: templates/includes/form_errors.html:8
 msgid "Please correct the errors below."
 msgstr "Lütfən aşağıdakı xətaları düzəldin."
@@ -561,10 +440,6 @@ msgstr "Səhifə:"
 msgid "/"
 msgstr "/"
 
-#: templates/includes/search_form.html:5
-msgid "Search"
-msgstr "Axtar"
-
 #: templates/includes/search_form.html:14
 msgid "Everything"
 msgstr "Hər şey"
@@ -573,63 +448,108 @@ msgstr "Hər şey"
 msgid "Go"
 msgstr "Get"
 
+#: templates/pages/index.html:34 templates/pages/index.html.py:52
+msgid "Learn More"
+msgstr "Ətraflı Öyrən"
+
 #: templates/pages/menus/admin.html:31
 msgid "Add"
-msgstr ""
+msgstr "Əlavə et"
 
 #: templates/pages/menus/footer.html:6
-msgid ""
-"Portions of this content are ©1998–2015 by individual mozilla.org "
-"contributors. Content available under a <a href='https://www.mozilla.org/az/"
-"foundation/licensing/website-content/'>Creative Commons license.</a>"
+msgid "Ubuntu and Canonical are registered trademarks of Canonical Ltd."
 msgstr ""
-"Bu məzmunun bir hissəsi ©1998–2015 mozilla.org proyektinin iştirakçıları "
-"tərəfindən yaradılıb. Məzmun <a href='https://www.mozilla.org/az/foundation/"
-"licensing/website-content/'>Creative Commons lisenziyası</a> ilə mövcuddur."
+"Ubuntu və Canonical Canonical Ltd.-nin qeydə alınmış əmtəə nişanlarıdır."
 
 #: templates/pages/menus/footer.html:10
-msgid "Contact Us"
-msgstr "Bizimlə Əlaqə"
+#, fuzzy
+msgid "Ubuntu Azerbaijan LoCo"
+msgstr "Ubuntu Azerbaijan LoCo"
 
-#: templates/pages/menus/footer.html:11
-msgid "Partner with Us"
-msgstr "Bizimlə iş birliyi"
+#: utils/timesince.py:24
+#, python-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d il"
 
-#: templates/pages/menus/footer.html:12
-msgid "Donate"
-msgstr "İanə"
+#: utils/timesince.py:25
+#, python-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d ay"
 
-#: templates/pages/menus/footer.html:13
-msgid "Firefox Affiliates"
-msgstr "Firefox Köməkçiləri"
+#: utils/timesince.py:26
+#, python-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] "%d həftə"
 
-#: templates/pages/menus/footer.html:14
-msgid "Contribute to this page"
-msgstr "Bu səhifəyə töhfə verin"
+#: utils/timesince.py:27
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d gün"
 
-#: templates/pages/menus/footer.html:17
-msgid "Privacy"
-msgstr "Məxfilik"
+#: utils/timesince.py:28
+#, python-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d saat"
 
-#: templates/pages/menus/footer.html:18
-msgid "Cookies"
-msgstr "Çərəzlər"
+#: utils/timesince.py:29
+#, python-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d dəqiqə"
 
-#: templates/pages/menus/footer.html:19
-msgid "Legal"
-msgstr "Qanuni"
+#: utils/timesince.py:45
+msgid "0 minutes"
+msgstr "0 dəqiqə"
 
-#: templates/pages/menus/footer.html:20
-msgid "Report Trademark Abuse"
-msgstr "Əmtəə Nişanının Qanunsuz İstifadəsi"
+#~ msgid "Toggle navigation"
+#~ msgstr "Naviqasiyanı keçir"
 
-#: templates/pages/menus/footer.html:52
-msgid "Other languages:"
-msgstr "Digər dillər:"
+#~ msgid "Information for media is available in our media page."
+#~ msgstr "Bütün yazılarımız üçün Bloq bölməsinə baxın."
 
-#: templates/twitter/tweets.html:7
-msgid "Recent Tweets"
-msgstr "Son Tweetlər"
+#~ msgid "Log in"
+#~ msgstr "Daxil ol"
+
+#~ msgid "Sign up"
+#~ msgstr "Qeydiyyat"
+
+#~ msgid "Authors"
+#~ msgstr "Yazarlar"
+
+#~ msgid "A new comment has been posted on"
+#~ msgstr "Yeni şərh əlavə edildi:"
+
+#~ msgid "Contact Us"
+#~ msgstr "Bizimlə Əlaqə"
+
+#~ msgid "Partner with Us"
+#~ msgstr "Bizimlə iş birliyi"
+
+#~ msgid "Donate"
+#~ msgstr "İanə"
+
+#~ msgid "Privacy"
+#~ msgstr "Məxfilik"
+
+#~ msgid "Cookies"
+#~ msgstr "Çərəzlər"
+
+#~ msgid "Legal"
+#~ msgstr "Qanuni"
+
+#~ msgid "Report Trademark Abuse"
+#~ msgstr "Əmtəə Nişanının Qanunsuz İstifadəsi"
+
+#~ msgid "Other languages:"
+#~ msgstr "Digər dillər:"
+
+#~ msgid "Recent Tweets"
+#~ msgstr "Son Tweetlər"
 
 #~ msgid "The page you requested does not exist."
 #~ msgstr "Sorğuladığınız səhifə mövcud deyil"

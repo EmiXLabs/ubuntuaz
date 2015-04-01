@@ -62,7 +62,7 @@
                             </span>
                             <span><i class="fa fa-calendar"></i> {% blocktrans with sometime=blog_post.publish_date|timesince %}{{ sometime }} ago{% endblocktrans %}
                             </span>
-                            <span><i class="fa fa-comment"></i> 
+                            <span><i class="fa fa-comments"></i> 
                               {% if blog_post.allow_comments %}
                                {% if settings.COMMENTS_DISQUS_SHORTNAME %}
                                 <a href="{{ blog_post.get_absolute_url }}#disqus_thread" data-disqus-identifier="{% disqus_id_for blog_post %}">

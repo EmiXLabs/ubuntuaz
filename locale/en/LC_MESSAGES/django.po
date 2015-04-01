@@ -1,22 +1,3 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
-msgid ""
-msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-26 02:34+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-
 #: models.py:68 models.py:116
 msgid "Title"
 msgstr ""
@@ -117,91 +98,80 @@ msgstr ""
 msgid "Site permissions"
 msgstr ""
 
-#: settings.py:118
+#: settings.py:122
 msgid "English"
 msgstr ""
 
-#: settings.py:119
+#: settings.py:123
 msgid "Azerbaijani"
 msgstr ""
 
-#: templates/base.html:90
-msgid "Toggle navigation"
+#: templates/base.html:69 templates/blog/blog_post_list.html:4
+#: templates/blog/blog_post_list.html:22 templates/blog/blog_post_list.html:77
+msgid "Blog"
+msgstr ""
+
+#: templates/base.html:70
+msgid "Ask"
+msgstr ""
+
+#: templates/base.html:71
+msgid "About"
+msgstr ""
+
+#: templates/base.html:72
+msgid "Products"
+msgstr ""
+
+#: templates/base.html:73
+msgid "Download"
+msgstr ""
+
+#: templates/base.html:78 templates/includes/search_form.html:5
+msgid "Search"
 msgstr ""
 
 #: templates/index.html:3 templates/index.html.py:4
-#: templates/search_results.html:13 templates/mobile/base.html:36
-#: templates/mobile/index.html:6 templates/pages/menus/breadcrumb.html:4
-#: templates/pages/menus/breadcrumb.html:10
-#: templates/pages/menus/dropdown.html:11
+#: templates/search_results.html:13 templates/pages/menus/breadcrumb.html:4
+#: templates/pages/menus/breadcrumb.html:9
 #: templates/pages/menus/footer_tree.html:11
 #: templates/pages/menus/mobile.html:10 templates/pages/menus/primary.html:8
 #: templates/pages/menus/tree.html:9
 msgid "Home"
 msgstr ""
 
-#: templates/index.html:23
-msgid "Firefox: The independent choice"
+#: templates/index.html:15
+msgid "Meet Ubuntu"
 msgstr ""
 
-#: templates/index.html:24
-msgid "Help us celebrate 10 years of choice and independence online."
-msgstr ""
-
-#: templates/index.html:25 templates/index.html.py:62 templates/index.html:76
-#: templates/pages/index.html:34 templates/pages/index.html.py:52
-msgid "Learn More"
-msgstr ""
-
-#: templates/index.html:56
-msgid "Choose Independent, Choose Firefox"
-msgstr ""
-
-#: templates/index.html:58
-msgid "Most Trusted Internet Company For Privacy"
-msgstr ""
-
-#: templates/index.html:73
-msgid "Firefox Hello - As easy as saying hello"
-msgstr ""
-
-#: templates/index.html:74
+#: templates/index.html:16
 msgid ""
-"Meet Firefox Hello, the easiest way to connect for free over video with "
-"anyone, anywhere."
+"Fast, free and incredibly easy to use, the Ubuntu operating system powers "
+"millions of desktop PCs, laptops and servers around the world."
 msgstr ""
 
-#: templates/index.html:94
-msgid "Firefox Desktop"
+#: templates/index.html:18
+msgid "Get Ubuntu now"
 msgstr ""
 
-#: templates/index.html:94
-msgid "Get it free on Mozilla"
+#: templates/index.html:23
+msgid "Tweet"
 msgstr ""
 
-#: templates/index.html:96
-msgid "Firefox for Android"
-msgstr ""
-
-#: templates/index.html:96
-msgid "Get it on Google Play"
-msgstr ""
-
-#: templates/index.html:104
+#: templates/index.html:35
 msgid "Latest Posts"
 msgstr ""
 
-#: templates/index.html:105
-msgid "Mozilla Azerbaijan News"
+#: templates/index.html:36
+msgid "Ubuntu Azerbaijan LoCo News"
 msgstr ""
 
-#: templates/index.html:105
-msgid "Information for media is available in our media page."
+#: templates/index.html:37
+msgid "Latest news releated to Ubuntu Linux."
 msgstr ""
 
 #: templates/search_results.html:5 templates/search_results.html.py:6
-#: templates/search_results.html:15 templates/mobile/search_results.html:5
-#: templates/mobile/search_results.html:6
+#: templates/search_results.html:15
 msgid "Search Results"
 msgstr ""
 
@@ -220,131 +190,49 @@ msgid ""
 "matching your query: %(query)s\n"
 msgstr ""
 
-#: templates/search_results.html:37 templates/blog/blog_post_detail.html:91
-#: templates/blog/blog_post_list.html:152
-#: templates/mobile/search_results.html:23
+#: templates/search_results.html:37
 msgid "read more"
 msgstr ""
 
-#: templates/accounts/account_login.html:7
-msgid ""
-"You're already logged in. If you'd like to log in as a different user, "
-"you'll need to log out first."
-msgstr ""
-
-#: templates/accounts/account_login.html:11
-#, python-format
-msgid ""
-"If you don't have an account you can <a href=\"%(signup_url)s?next=%(next)s"
-"\">sign up</a> for one now."
-msgstr ""
-
-#: templates/accounts/account_login.html:14
-#, python-format
-msgid ""
-"<p>You can also <a href=\"%(password_reset_url)s?next=%(profile_update_url)s"
-"\">reset your password</a> if you've forgotten it.</p>"
-msgstr ""
-
-#: templates/accounts/account_password_reset.html:6
-msgid ""
-"Enter your username or email address and you'll receive an email with a link "
-"you need to click, in order to log in and change your password."
-msgstr ""
-
-#: templates/accounts/account_profile.html:18
-#: templates/accounts/includes/user_panel.html:12
-msgid "Update profile"
-msgstr ""
-
-#: templates/accounts/account_signup.html:7
-msgid ""
-"You're already logged in. If you'd like to create a new account, you'll need "
-"to log out first."
-msgstr ""
-
-#: templates/accounts/account_signup.html:11
-msgid ""
-"After signing up, your account will be reviewed for approval. You'll receive "
-"an email when your account is activated."
-msgstr ""
-
-#: templates/accounts/account_signup.html:13
-msgid ""
-"After signing up, you'll receive an email with a link you need to click, in "
-"order to activate your account."
-msgstr ""
-
-#: templates/accounts/includes/user_panel.html:22
-#: templates/accounts/includes/user_panel_nav.html:11
-#: templates/includes/editable_toolbar.html:9
-msgid "Log out"
-msgstr ""
-
-#: templates/accounts/includes/user_panel.html:27
-#: templates/accounts/includes/user_panel_nav.html:14
-msgid "Log in"
-msgstr ""
-
-#: templates/accounts/includes/user_panel.html:30
-#: templates/accounts/includes/user_panel_nav.html:16
-msgid "Sign up"
-msgstr ""
-
-#: templates/blog/blog_post_detail.html:53
-#: templates/blog/blog_post_list.html:114
+#: templates/blog/blog_post_detail.html:56
 msgid "in"
 msgstr ""
 
-#: templates/blog/blog_post_detail.html:61
-#: templates/blog/blog_post_list.html:122
+#: templates/blog/blog_post_detail.html:63
 #: templates/generic/includes/comment.html:23
 #: templates/generic/includes/comment.html:43
 #: templates/generic/includes/comment.html:82
-#: templates/mobile/blog/blog_post_detail.html:30
-#: templates/mobile/blog/blog_post_list.html:28
-#: templates/twitter/tweets.html:19
 #, python-format
 msgid "%(sometime)s ago"
 msgstr ""
 
-#: templates/blog/blog_post_detail.html:68
-#: templates/blog/blog_post_list.html:129
-#: templates/generic/includes/comments.html:4
+#: templates/blog/blog_post_detail.html:69
+#: templates/generic/includes/comments.html:3
 msgid "Comments"
 msgstr ""
 
-#: templates/blog/blog_post_detail.html:72
-#: templates/blog/blog_post_list.html:133
+#: templates/blog/blog_post_detail.html:73
 #, python-format
 msgid "%(comments_count)s comment"
 msgid_plural "%(comments_count)s comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: templates/blog/blog_post_detail.html:96
-#: templates/blog/blog_post_list.html:157
-#: templates/blog/includes/filter_panel.html:59
-#: templates/mobile/blog/blog_post_detail.html:41
+#: templates/blog/blog_post_detail.html:90
+#: templates/blog/includes/filter_panel.html:75
 msgid "Tags"
 msgstr ""
 
-#: templates/blog/blog_post_detail.html:128
-msgid "Share on Twitter"
-msgstr ""
-
-#: templates/blog/blog_post_detail.html:129
+#: templates/blog/blog_post_detail.html:112
 msgid "Share on Facebook"
 msgstr ""
 
-#: templates/blog/blog_post_detail.html:154
-msgid "Related posts"
+#: templates/blog/blog_post_detail.html:113
+msgid "Twitter"
 msgstr ""
 
-#: templates/blog/blog_post_list.html:4 templates/blog/blog_post_list.html:22
-#: templates/mobile/blog/blog_post_list.html:4
-#: templates/mobile/blog/blog_post_list.html:19
-msgid "Blog"
+#: templates/blog/blog_post_detail.html:145
+msgid "Related posts"
 msgstr ""
 
 #: templates/blog/blog_post_list.html:31
@@ -359,77 +247,75 @@ msgstr ""
 msgid "Author:"
 msgstr ""
 
+#: templates/blog/blog_post_list.html:56
+msgid "Posts tagged"
+msgstr ""
+
+#: templates/blog/blog_post_list.html:58
+msgid "Posts for the category"
+msgstr ""
+
 #: templates/blog/blog_post_list.html:60
-msgid "Viewing posts tagged"
+msgid "Posts from"
 msgstr ""
 
-#: templates/blog/blog_post_list.html:62
-msgid "Viewing posts for the category"
+#: templates/blog/blog_post_list.html:63
+msgid "Posts by"
 msgstr ""
 
-#: templates/blog/blog_post_list.html:64
-msgid "Viewing posts from"
+#: templates/blog/blog_post_list.html:83
+msgid "Ubuntu OS"
 msgstr ""
 
-#: templates/blog/blog_post_list.html:67
-msgid "Viewing posts by"
+#: templates/blog/blog_post_list.html:86
+msgid "Touch"
 msgstr ""
 
-#: templates/blog/includes/filter_panel.html:6
+#: templates/blog/blog_post_list.html:89
+msgid "LoCo"
+msgstr ""
+
+#: templates/blog/blog_post_list.html:125
+msgid "Continue reading"
+msgstr ""
+
+#: templates/blog/blog_post_list.html:143
+#, python-format
+msgid "%(sometime)s"
+msgstr ""
+
+#: templates/blog/includes/filter_panel.html:8
 msgid "Recent Posts"
 msgstr ""
 
-#: templates/blog/includes/filter_panel.html:19
+#: templates/blog/includes/filter_panel.html:28
 msgid "Archive"
 msgstr ""
 
-#: templates/blog/includes/filter_panel.html:36
+#: templates/blog/includes/filter_panel.html:54
 msgid "Categories"
 msgstr ""
 
-#: templates/blog/includes/filter_panel.html:76
-msgid "Authors"
-msgstr ""
-
-#: templates/blog/includes/filter_panel.html:88
+#: templates/blog/includes/filter_panel.html:120
 msgid "Feeds"
 msgstr ""
 
-#: templates/blog/includes/filter_panel.html:90
-#: templates/blog/includes/filter_panel.html:94
-#: templates/blog/includes/filter_panel.html:98
-#: templates/blog/includes/filter_panel.html:102
+#: templates/blog/includes/filter_panel.html:124
+#: templates/blog/includes/filter_panel.html:128
+#: templates/blog/includes/filter_panel.html:132
+#: templates/blog/includes/filter_panel.html:136
 msgid "RSS"
 msgstr ""
 
-#: templates/blog/includes/filter_panel.html:91
-#: templates/blog/includes/filter_panel.html:95
-#: templates/blog/includes/filter_panel.html:99
-#: templates/blog/includes/filter_panel.html:103
+#: templates/blog/includes/filter_panel.html:125
+#: templates/blog/includes/filter_panel.html:129
+#: templates/blog/includes/filter_panel.html:133
+#: templates/blog/includes/filter_panel.html:137
 msgid "Atom"
 msgstr ""
 
-#: templates/email/comment_notification.html:6
-msgid "A new comment has been posted on"
-msgstr ""
-
-#: templates/email/comment_notification.html:10
-#, python-format
-msgid ""
-"\n"
-"    At %(submit_date)s %(user_name)s wrote:\n"
-"    "
-msgstr ""
-
-#: templates/email/comment_notification.txt:7
-#, python-format
-msgid ""
-"\n"
-"At %(submit_date)s %(user_name)s wrote:\n"
-msgstr ""
-
 #: templates/errors/404.html:6 templates/errors/404.html.py:10
-#: templates/errors/404.html:15 templates/mobile/404.html:6
+#: templates/errors/404.html:15
 msgid "Page not found"
 msgstr ""
 
@@ -441,7 +327,7 @@ msgid ""
 msgstr ""
 
 #: templates/errors/500.html:6 templates/errors/500.html.py:10
-#: templates/errors/500.html:15 templates/mobile/500.html:6
+#: templates/errors/500.html:15
 msgid "Error"
 msgstr ""
 
@@ -473,7 +359,7 @@ msgstr ""
 msgid "There are currently no comments"
 msgstr ""
 
-#: templates/generic/includes/comments.html:23
+#: templates/generic/includes/comments.html:20
 msgid "New Comment"
 msgstr ""
 
@@ -505,6 +391,10 @@ msgstr ""
 msgid "Admin"
 msgstr ""
 
+#: templates/includes/editable_toolbar.html:9
+msgid "Log out"
+msgstr ""
+
 #: templates/includes/form_errors.html:8
 msgid "Please correct the errors below."
 msgstr ""
@@ -517,11 +407,6 @@ msgstr ""
 msgid "/"
 msgstr ""
 
-#: templates/includes/search_form.html:5
-#: templates/mobile/includes/search.html:4
-msgid "Search"
-msgstr ""
-
 #: templates/includes/search_form.html:14
 msgid "Everything"
 msgstr ""
@@ -530,70 +415,8 @@ msgstr ""
 msgid "Go"
 msgstr ""
 
-#: templates/mobile/404.html:10
-msgid "The page you requested does not exist."
-msgstr ""
-
-#: templates/mobile/500.html:10
-msgid "Sorry, an error occurred."
-msgstr ""
-
-#: templates/mobile/base.html:49
-msgid "View Full Site"
-msgstr ""
-
-#: templates/mobile/search_results.html:12
-msgid "No results were found matching your query: "
-msgstr ""
-
-#: templates/mobile/search_results.html:14
-msgid "Showing"
-msgstr ""
-
-#: templates/mobile/search_results.html:14
-msgid "to"
-msgstr ""
-
-#: templates/mobile/search_results.html:14
-msgid "of"
-msgstr ""
-
-#: templates/mobile/search_results.html:15
-msgid "results matching your query:"
-msgstr ""
-
-#: templates/mobile/blog/blog_post_detail.html:23
-msgid "Posted by"
-msgstr ""
-
-#: templates/mobile/blog/blog_post_detail.html:52
-msgid "Share this on:"
-msgstr ""
-
-#: templates/mobile/blog/blog_post_detail.html:54
-msgid "or"
-msgstr ""
-
-#: templates/mobile/includes/pagination.html:6
-msgid "Previous"
-msgstr ""
-
-#: templates/mobile/includes/pagination.html:9
-msgid "Next"
-msgstr ""
-
-#: templates/mobile/includes/search.html:5
-msgid "Use "
-msgstr ""
-
-#: templates/mobile/includes/search.html:5
-msgid "quotes"
-msgstr ""
-
-#: templates/mobile/includes/search.html:5
-msgid ""
-" for exact phrases, + to make a word or phrase required, and - to exclude a "
-"word or phrase."
+#: templates/pages/index.html:34 templates/pages/index.html.py:52
+msgid "Learn More"
 msgstr ""
 
 #: templates/pages/menus/admin.html:31
@@ -601,52 +424,9 @@ msgid "Add"
 msgstr ""
 
 #: templates/pages/menus/footer.html:6
-msgid ""
-"Portions of this content are ©1998–2015 by individual mozilla.org "
-"contributors. Content available under a <a href='https://www.mozilla.org/az/"
-"foundation/licensing/website-content/'>Creative Commons license.</a>"
+msgid "Ubuntu and Canonical are registered trademarks of Canonical Ltd."
 msgstr ""
 
 #: templates/pages/menus/footer.html:10
-msgid "Contact Us"
-msgstr ""
-
-#: templates/pages/menus/footer.html:11
-msgid "Partner with Us"
-msgstr ""
-
-#: templates/pages/menus/footer.html:12
-msgid "Donate"
-msgstr ""
-
-#: templates/pages/menus/footer.html:13
-msgid "Firefox Affiliates"
-msgstr ""
-
-#: templates/pages/menus/footer.html:14
-msgid "Contribute to this page"
-msgstr ""
-
-#: templates/pages/menus/footer.html:17
-msgid "Privacy"
-msgstr ""
-
-#: templates/pages/menus/footer.html:18
-msgid "Cookies"
-msgstr ""
-
-#: templates/pages/menus/footer.html:19
-msgid "Legal"
-msgstr ""
-
-#: templates/pages/menus/footer.html:20
-msgid "Report Trademark Abuse"
-msgstr ""
-
-#: templates/pages/menus/footer.html:52
-msgid "Other languages:"
-msgstr ""
-
-#: templates/twitter/tweets.html:7
-msgid "Recent Tweets"
+msgid "Ubuntu Azerbaijan LoCo"
 msgstr ""
