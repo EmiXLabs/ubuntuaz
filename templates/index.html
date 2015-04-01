@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load i18n staticfiles blog_tags mezzanine_tags %}
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+{% block top %}
+
+{% endblock %}
+
+{% block main %}
+<section class="content" id="content">
+    <div class="row">
+        <div class="inner-wrapper">
+            <div class="box eight-col box-highlight home-show">
+                <div class="six-col">
+                    <h1 class="home-title">{% trans "Meet Ubuntu" %}</h1>
+                    <p class="home-intro">{% trans "Fast, free and incredibly easy to use, the Ubuntu operating system powers millions of desktop PCs, laptops and servers around the world." %}</p>
+                    <p>
+                        <a href="http://www.ubuntu.com/download/desktop/" class="btn btn-warning">{% trans "Get Ubuntu now" %}</a>
+                    </p>
+                    <div class="share-this">
+                        <div class="fb-like" data-href="https://www.facebook.com/ubuntuaze" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                        <div class="g-plusone" data-size="medium" data-href="https://plus.google.com/106858237108589662732"></div>
+                        <a class="twitter-share-button" href="https://twitter.com/share">{% trans "Tweet" %}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="recent-posts">
+  <div class="row">
+    <div class="inner-wrapper">
+      <div class="box eight-col box-highlight">
+            <div class="three-col">
+                <h3>{% trans "Latest Posts" %}</h3>
+                <p>{% trans "Ubuntu Azerbaijan LoCo News - Latest news releated to Ubuntu Linux." %}</p>
+                <div class="btn-group">
+                    <a class="btn btn-warning" href="#scroller" data-slide="prev"><i class="fa fa-toggle-left"></i></a>
+                    <a class="btn btn-warning" href="#scroller" data-slide="next"><i class="fa fa-toggle-right"></i></a>
+                </div>
+            </div>
+            <div class="six-col">
+                <div id="scroller" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row no-padding">
+                             {% block blog_recent_posts %}
+                              {% blog_recent_posts 5 as recent_posts %}
+                               {% if recent_posts %}
+                                {% for recent_post in recent_posts %}
+                                  <div class="col-xs-3">
+                                   <a href="{{ recent_post.get_absolute_url }}">
+                                    <div class="recent-post-item">
+                                      <div class="item-inner">
+                                        {% if settings.BLOG_USE_FEATURED_IMAGE and recent_post.featured_image %}
+                                            <img class="img-responsive" src="{{ MEDIA_URL }}{% thumbnail recent_post.featured_image 236 236 %}" alt="{{ recent_post.title }}">
+                                        {% endif %}
+                                        <h5>
+                                            {{ recent_post.title }}
+                                        </h5>
+                                      </div>
+                                    </div>
+                                   </a>
+                                  </div>
+                                {% endfor %}
+                               {% endif %}
+                             {% endblock %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

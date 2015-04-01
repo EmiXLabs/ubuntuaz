@@ -1,0 +1,652 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-26 02:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: models.py:68 models.py:116
+msgid "Title"
+msgstr ""
+
+#: models.py:69
+msgid "URL"
+msgstr ""
+
+#: models.py:70
+msgid "Leave blank to have the URL auto-generated from the title."
+msgstr ""
+
+#: models.py:106
+msgid "View on site"
+msgstr ""
+
+#: models.py:118
+msgid ""
+"Optional title to be used in the HTML title tag. If left blank, the main "
+"title field will be used."
+msgstr ""
+
+#: models.py:120
+msgid "Description"
+msgstr ""
+
+#: models.py:121
+msgid "Generate description"
+msgstr ""
+
+#: models.py:122
+msgid ""
+"If checked, the description will be automatically generated from content. "
+"Uncheck if you want to manually set a custom description."
+msgstr ""
+
+#: models.py:125
+msgid "Keywords"
+msgstr ""
+
+#: models.py:201
+msgid "Draft"
+msgstr ""
+
+#: models.py:202
+msgid "Published"
+msgstr ""
+
+#: models.py:213
+msgid "Status"
+msgstr ""
+
+#: models.py:215
+msgid "With Draft chosen, will only be shown for admin users on the site."
+msgstr ""
+
+#: models.py:217 models.py:250
+msgid "Published from"
+msgstr ""
+
+#: models.py:218
+msgid "With Published chosen, won't be shown until this time"
+msgstr ""
+
+#: models.py:220
+msgid "Expires on"
+msgstr ""
+
+#: models.py:221
+msgid "With Published chosen, won't be shown after this time"
+msgstr ""
+
+#: models.py:224
+msgid "Show in sitemap"
+msgstr ""
+
+#: models.py:322
+msgid "Content"
+msgstr ""
+
+#: models.py:362
+msgid "Order"
+msgstr ""
+
+#: models.py:447 models.py:467
+msgid "Author"
+msgstr ""
+
+#: models.py:470
+msgid "Sites"
+msgstr ""
+
+#: models.py:473
+msgid "Site permission"
+msgstr ""
+
+#: models.py:474
+msgid "Site permissions"
+msgstr ""
+
+#: settings.py:118
+msgid "English"
+msgstr ""
+
+#: settings.py:119
+msgid "Azerbaijani"
+msgstr ""
+
+#: templates/base.html:90
+msgid "Toggle navigation"
+msgstr ""
+
+#: templates/index.html:3 templates/index.html.py:4
+#: templates/search_results.html:13 templates/mobile/base.html:36
+#: templates/mobile/index.html:6 templates/pages/menus/breadcrumb.html:4
+#: templates/pages/menus/breadcrumb.html:10
+#: templates/pages/menus/dropdown.html:11
+#: templates/pages/menus/footer_tree.html:11
+#: templates/pages/menus/mobile.html:10 templates/pages/menus/primary.html:8
+#: templates/pages/menus/tree.html:9
+msgid "Home"
+msgstr ""
+
+#: templates/index.html:23
+msgid "Firefox: The independent choice"
+msgstr ""
+
+#: templates/index.html:24
+msgid "Help us celebrate 10 years of choice and independence online."
+msgstr ""
+
+#: templates/index.html:25 templates/index.html.py:62 templates/index.html:76
+#: templates/pages/index.html:34 templates/pages/index.html.py:52
+msgid "Learn More"
+msgstr ""
+
+#: templates/index.html:56
+msgid "Choose Independent, Choose Firefox"
+msgstr ""
+
+#: templates/index.html:58
+msgid "Most Trusted Internet Company For Privacy"
+msgstr ""
+
+#: templates/index.html:73
+msgid "Firefox Hello - As easy as saying hello"
+msgstr ""
+
+#: templates/index.html:74
+msgid ""
+"Meet Firefox Hello, the easiest way to connect for free over video with "
+"anyone, anywhere."
+msgstr ""
+
+#: templates/index.html:94
+msgid "Firefox Desktop"
+msgstr ""
+
+#: templates/index.html:94
+msgid "Get it free on Mozilla"
+msgstr ""
+
+#: templates/index.html:96
+msgid "Firefox for Android"
+msgstr ""
+
+#: templates/index.html:96
+msgid "Get it on Google Play"
+msgstr ""
+
+#: templates/index.html:104
+msgid "Latest Posts"
+msgstr ""
+
+#: templates/index.html:105
+msgid "Mozilla Azerbaijan News"
+msgstr ""
+
+#: templates/index.html:105
+msgid "Information for media is available in our media page."
+msgstr ""
+
+#: templates/search_results.html:5 templates/search_results.html.py:6
+#: templates/search_results.html:15 templates/mobile/search_results.html:5
+#: templates/mobile/search_results.html:6
+msgid "Search Results"
+msgstr ""
+
+#: templates/search_results.html:22
+#, python-format
+msgid ""
+"\n"
+"No results were found in %(search_type)s matching your query: %(query)s\n"
+msgstr ""
+
+#: templates/search_results.html:26
+#, python-format
+msgid ""
+"\n"
+"Showing %(start)s to %(end)s of %(total)s results in %(search_type)s "
+"matching your query: %(query)s\n"
+msgstr ""
+
+#: templates/search_results.html:37 templates/blog/blog_post_detail.html:91
+#: templates/blog/blog_post_list.html:152
+#: templates/mobile/search_results.html:23
+msgid "read more"
+msgstr ""
+
+#: templates/accounts/account_login.html:7
+msgid ""
+"You're already logged in. If you'd like to log in as a different user, "
+"you'll need to log out first."
+msgstr ""
+
+#: templates/accounts/account_login.html:11
+#, python-format
+msgid ""
+"If you don't have an account you can <a href=\"%(signup_url)s?next=%(next)s"
+"\">sign up</a> for one now."
+msgstr ""
+
+#: templates/accounts/account_login.html:14
+#, python-format
+msgid ""
+"<p>You can also <a href=\"%(password_reset_url)s?next=%(profile_update_url)s"
+"\">reset your password</a> if you've forgotten it.</p>"
+msgstr ""
+
+#: templates/accounts/account_password_reset.html:6
+msgid ""
+"Enter your username or email address and you'll receive an email with a link "
+"you need to click, in order to log in and change your password."
+msgstr ""
+
+#: templates/accounts/account_profile.html:18
+#: templates/accounts/includes/user_panel.html:12
+msgid "Update profile"
+msgstr ""
+
+#: templates/accounts/account_signup.html:7
+msgid ""
+"You're already logged in. If you'd like to create a new account, you'll need "
+"to log out first."
+msgstr ""
+
+#: templates/accounts/account_signup.html:11
+msgid ""
+"After signing up, your account will be reviewed for approval. You'll receive "
+"an email when your account is activated."
+msgstr ""
+
+#: templates/accounts/account_signup.html:13
+msgid ""
+"After signing up, you'll receive an email with a link you need to click, in "
+"order to activate your account."
+msgstr ""
+
+#: templates/accounts/includes/user_panel.html:22
+#: templates/accounts/includes/user_panel_nav.html:11
+#: templates/includes/editable_toolbar.html:9
+msgid "Log out"
+msgstr ""
+
+#: templates/accounts/includes/user_panel.html:27
+#: templates/accounts/includes/user_panel_nav.html:14
+msgid "Log in"
+msgstr ""
+
+#: templates/accounts/includes/user_panel.html:30
+#: templates/accounts/includes/user_panel_nav.html:16
+msgid "Sign up"
+msgstr ""
+
+#: templates/blog/blog_post_detail.html:53
+#: templates/blog/blog_post_list.html:114
+msgid "in"
+msgstr ""
+
+#: templates/blog/blog_post_detail.html:61
+#: templates/blog/blog_post_list.html:122
+#: templates/generic/includes/comment.html:23
+#: templates/generic/includes/comment.html:43
+#: templates/generic/includes/comment.html:82
+#: templates/mobile/blog/blog_post_detail.html:30
+#: templates/mobile/blog/blog_post_list.html:28
+#: templates/twitter/tweets.html:19
+#, python-format
+msgid "%(sometime)s ago"
+msgstr ""
+
+#: templates/blog/blog_post_detail.html:68
+#: templates/blog/blog_post_list.html:129
+#: templates/generic/includes/comments.html:4
+msgid "Comments"
+msgstr ""
+
+#: templates/blog/blog_post_detail.html:72
+#: templates/blog/blog_post_list.html:133
+#, python-format
+msgid "%(comments_count)s comment"
+msgid_plural "%(comments_count)s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/blog/blog_post_detail.html:96
+#: templates/blog/blog_post_list.html:157
+#: templates/blog/includes/filter_panel.html:59
+#: templates/mobile/blog/blog_post_detail.html:41
+msgid "Tags"
+msgstr ""
+
+#: templates/blog/blog_post_detail.html:128
+msgid "Share on Twitter"
+msgstr ""
+
+#: templates/blog/blog_post_detail.html:129
+msgid "Share on Facebook"
+msgstr ""
+
+#: templates/blog/blog_post_detail.html:154
+msgid "Related posts"
+msgstr ""
+
+#: templates/blog/blog_post_list.html:4 templates/blog/blog_post_list.html:22
+#: templates/mobile/blog/blog_post_list.html:4
+#: templates/mobile/blog/blog_post_list.html:19
+msgid "Blog"
+msgstr ""
+
+#: templates/blog/blog_post_list.html:31
+msgid "Tag:"
+msgstr ""
+
+#: templates/blog/blog_post_list.html:33
+msgid "Category:"
+msgstr ""
+
+#: templates/blog/blog_post_list.html:37
+msgid "Author:"
+msgstr ""
+
+#: templates/blog/blog_post_list.html:60
+msgid "Viewing posts tagged"
+msgstr ""
+
+#: templates/blog/blog_post_list.html:62
+msgid "Viewing posts for the category"
+msgstr ""
+
+#: templates/blog/blog_post_list.html:64
+msgid "Viewing posts from"
+msgstr ""
+
+#: templates/blog/blog_post_list.html:67
+msgid "Viewing posts by"
+msgstr ""
+
+#: templates/blog/includes/filter_panel.html:6
+msgid "Recent Posts"
+msgstr ""
+
+#: templates/blog/includes/filter_panel.html:19
+msgid "Archive"
+msgstr ""
+
+#: templates/blog/includes/filter_panel.html:36
+msgid "Categories"
+msgstr ""
+
+#: templates/blog/includes/filter_panel.html:76
+msgid "Authors"
+msgstr ""
+
+#: templates/blog/includes/filter_panel.html:88
+msgid "Feeds"
+msgstr ""
+
+#: templates/blog/includes/filter_panel.html:90
+#: templates/blog/includes/filter_panel.html:94
+#: templates/blog/includes/filter_panel.html:98
+#: templates/blog/includes/filter_panel.html:102
+msgid "RSS"
+msgstr ""
+
+#: templates/blog/includes/filter_panel.html:91
+#: templates/blog/includes/filter_panel.html:95
+#: templates/blog/includes/filter_panel.html:99
+#: templates/blog/includes/filter_panel.html:103
+msgid "Atom"
+msgstr ""
+
+#: templates/email/comment_notification.html:6
+msgid "A new comment has been posted on"
+msgstr ""
+
+#: templates/email/comment_notification.html:10
+#, python-format
+msgid ""
+"\n"
+"    At %(submit_date)s %(user_name)s wrote:\n"
+"    "
+msgstr ""
+
+#: templates/email/comment_notification.txt:7
+#, python-format
+msgid ""
+"\n"
+"At %(submit_date)s %(user_name)s wrote:\n"
+msgstr ""
+
+#: templates/errors/404.html:6 templates/errors/404.html.py:10
+#: templates/errors/404.html:15 templates/mobile/404.html:6
+msgid "Page not found"
+msgstr ""
+
+#: templates/errors/404.html:16
+msgid ""
+"We tried a lot to find page you requested, but couldn't find. Try searching, "
+"if you are sure that its our fault, then please, contact us. Happy "
+"Browsing..."
+msgstr ""
+
+#: templates/errors/500.html:6 templates/errors/500.html.py:10
+#: templates/errors/500.html:15 templates/mobile/500.html:6
+msgid "Error"
+msgstr ""
+
+#: templates/errors/500.html:16
+msgid ""
+"Sorry, something crashed. We will analyse that as soon as possible. Happy "
+"Browsing..."
+msgstr ""
+
+#: templates/generic/includes/comment.html:25
+#: templates/generic/includes/comment.html:45
+#: templates/generic/includes/comment.html:72
+msgid "Reply"
+msgstr ""
+
+#: templates/generic/includes/comment.html:54
+msgid "Link"
+msgstr ""
+
+#: templates/generic/includes/comment.html:78
+msgid "Comment deleted"
+msgstr ""
+
+#: templates/generic/includes/comment.html:80
+msgid "Comment awaiting approval"
+msgstr ""
+
+#: templates/generic/includes/comment.html:95
+msgid "There are currently no comments"
+msgstr ""
+
+#: templates/generic/includes/comments.html:23
+msgid "New Comment"
+msgstr ""
+
+#: templates/generic/includes/rating.html:5
+msgid "Current rating"
+msgstr ""
+
+#: templates/generic/includes/rating.html:7
+msgid "Currently unrated"
+msgstr ""
+
+#: templates/generic/includes/rating.html:17
+msgid "Rate"
+msgstr ""
+
+#: templates/includes/editable_form.html:16
+msgid "Save"
+msgstr ""
+
+#: templates/includes/editable_form.html:17
+msgid "Cancel"
+msgstr ""
+
+#: templates/includes/editable_form.html:25
+msgid "Edit"
+msgstr ""
+
+#: templates/includes/editable_toolbar.html:8
+msgid "Admin"
+msgstr ""
+
+#: templates/includes/form_errors.html:8
+msgid "Please correct the errors below."
+msgstr ""
+
+#: templates/includes/pagination.html:7
+msgid "Page:"
+msgstr ""
+
+#: templates/includes/pagination.html:7
+msgid "/"
+msgstr ""
+
+#: templates/includes/search_form.html:5
+#: templates/mobile/includes/search.html:4
+msgid "Search"
+msgstr ""
+
+#: templates/includes/search_form.html:14
+msgid "Everything"
+msgstr ""
+
+#: templates/includes/search_form.html:26
+msgid "Go"
+msgstr ""
+
+#: templates/mobile/404.html:10
+msgid "The page you requested does not exist."
+msgstr ""
+
+#: templates/mobile/500.html:10
+msgid "Sorry, an error occurred."
+msgstr ""
+
+#: templates/mobile/base.html:49
+msgid "View Full Site"
+msgstr ""
+
+#: templates/mobile/search_results.html:12
+msgid "No results were found matching your query: "
+msgstr ""
+
+#: templates/mobile/search_results.html:14
+msgid "Showing"
+msgstr ""
+
+#: templates/mobile/search_results.html:14
+msgid "to"
+msgstr ""
+
+#: templates/mobile/search_results.html:14
+msgid "of"
+msgstr ""
+
+#: templates/mobile/search_results.html:15
+msgid "results matching your query:"
+msgstr ""
+
+#: templates/mobile/blog/blog_post_detail.html:23
+msgid "Posted by"
+msgstr ""
+
+#: templates/mobile/blog/blog_post_detail.html:52
+msgid "Share this on:"
+msgstr ""
+
+#: templates/mobile/blog/blog_post_detail.html:54
+msgid "or"
+msgstr ""
+
+#: templates/mobile/includes/pagination.html:6
+msgid "Previous"
+msgstr ""
+
+#: templates/mobile/includes/pagination.html:9
+msgid "Next"
+msgstr ""
+
+#: templates/mobile/includes/search.html:5
+msgid "Use "
+msgstr ""
+
+#: templates/mobile/includes/search.html:5
+msgid "quotes"
+msgstr ""
+
+#: templates/mobile/includes/search.html:5
+msgid ""
+" for exact phrases, + to make a word or phrase required, and - to exclude a "
+"word or phrase."
+msgstr ""
+
+#: templates/pages/menus/admin.html:31
+msgid "Add"
+msgstr ""
+
+#: templates/pages/menus/footer.html:6
+msgid ""
+"Portions of this content are ©1998–2015 by individual mozilla.org "
+"contributors. Content available under a <a href='https://www.mozilla.org/az/"
+"foundation/licensing/website-content/'>Creative Commons license.</a>"
+msgstr ""
+
+#: templates/pages/menus/footer.html:10
+msgid "Contact Us"
+msgstr ""
+
+#: templates/pages/menus/footer.html:11
+msgid "Partner with Us"
+msgstr ""
+
+#: templates/pages/menus/footer.html:12
+msgid "Donate"
+msgstr ""
+
+#: templates/pages/menus/footer.html:13
+msgid "Firefox Affiliates"
+msgstr ""
+
+#: templates/pages/menus/footer.html:14
+msgid "Contribute to this page"
+msgstr ""
+
+#: templates/pages/menus/footer.html:17
+msgid "Privacy"
+msgstr ""
+
+#: templates/pages/menus/footer.html:18
+msgid "Cookies"
+msgstr ""
+
+#: templates/pages/menus/footer.html:19
+msgid "Legal"
+msgstr ""
+
+#: templates/pages/menus/footer.html:20
+msgid "Report Trademark Abuse"
+msgstr ""
+
+#: templates/pages/menus/footer.html:52
+msgid "Other languages:"
+msgstr ""
+
+#: templates/twitter/tweets.html:7
+msgid "Recent Tweets"
+msgstr ""

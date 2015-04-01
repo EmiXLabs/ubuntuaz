@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+{% load i18n future mezzanine_tags blog_tags keyword_tags disqus_tags %}
+
+{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Blog" %}{% endif %}{% endblock %}
+
+{% block meta_keywords %}{% metablock %}
+{% keywords_for page as keywords %}
+{% for keyword in keywords %}
+    {% if not forloop.first %}, {% endif %}
+    {{ keyword }}
+{% endfor %}
+{% endmetablock %}{% endblock %}
+
+{% block meta_description %}{% metablock %}
+{{ page.description }}
+{% endmetablock %}{% endblock %}
+
+{% block title %}
+{% if page %}
+{% editable page.title %}{{ page.title }}{% endeditable %}
+{% else %}
+{% trans "Blog" %}
+{% endif %}
+{% endblock %}
+
+{% block breadcrumb_menu %}
+{{ block.super }}
+{% if tag or category or year or month or author %}
+<li>{% spaceless %}
+{% if tag %}
+    {% trans "Tag:" %} {{ tag }}
+{% else %}{% if category %}
+    {% trans "Category:" %} {{ category }}
+{% else %}{% if year or month %}
+    {% if month %}{{ month }}, {% endif %}{{ year }}
+{% else %}{% if author %}
+    {% trans "Author:" %} {{ author.get_full_name|default:author.username }}
+{% endif %}{% endif %}{% endif %}{% endif %}
+{% endspaceless %}
+</li>
+{% endif %}
+{% endblock %}
+
+{% block main %}
+<div class="wrapper clearfix">
+    <div id="main-content" class="inner-wrapper clearfix" role="main">
+        <div class="row no-border">
+            <div class="inner-wrapper">
+                <div id="content eight-col no-margin-bottom">
+                    <div class="box eight-col box-highlight">
+                        <div class="subheader">
+                            <h1 id="top-questions">
+                            {% if tag or category or year or month or author %}
+                                {% block blog_post_list_filterinfo %}
+                                {% if tag %}
+                                    {% trans "Posts tagged" %} {{ tag }}
+                                {% else %}{% if category %}
+                                    {% trans "Posts for the category" %} {{ category }}
+                                {% else %}{% if year or month %}
+                                    {% trans "Posts from" %} {% if month %}{{ month }}, {% endif %}
+                                    {{ year }}
+                                {% else %}{% if author %}
+                                    {% trans "Posts by" %}
+                                    {{ author.get_full_name|default:author.username }}
+                                {% endif %}{% endif %}{% endif %}{% endif %}
+                                {% endblock %}
+                            {% else %}
+                                {% if page %}
+                                {% block blog_post_list_pagecontent %}
+                                {% if page.get_content_model.content %}
+                                    {% editable page.get_content_model.content %}
+                                    {{ page.get_content_model.content|richtext_filters|safe }}
+                                    {% endeditable %}
+                                {% endif %}
+                                {% endblock %}
+                                {% else %}
+                                    {% trans "Blog" %}
+                                {% endif %}
+                            {% endif %}
+                            </h1>
+                            <div id="tabs" class="btn-group btn-group">
+                                <a href="/blog/category/ubuntu" class="btn btn-default btn-xs active">
+                                    {% trans "Ubuntu OS" %}
+                                </a>
+                                <a href="/blog/category/touch" class="btn btn-default btn-xs">
+                                    {% trans "Touch" %}
+                                </a>
+                                <a href="/blog/category/loco" class="btn btn-default btn-xs">
+                                    {% trans "LoCo" %}
+                                </a>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="post-list">
+                                {% for blog_post in blog_posts.object_list %}
+    <article class="row no-border no-padding-bottom blogpost ">
+        <header>
+            <h1 id="post-header">
+            {% block blog_post_list_post_title %}
+            {% editable blog_post.title %}
+                <a href="{{ blog_post.get_absolute_url }}" title="{{ blog_post.title }}" rel="bookmark">
+                    {{ blog_post.title }}
+                </a>
+            {% endeditable %}
+            {% endblock %}
+            </h1>
+        </header>
+        <div class="eight-col" id="post-details">
+            {% if settings.BLOG_USE_FEATURED_IMAGE and blog_post.featured_image %}
+                {% block blog_post_list_post_featured_image %}
+                <a href="{{ blog_post.get_absolute_url }}" title="{{ blog_post.title }}" rel="bookmark">
+                    <img class="post-image" src="{{ MEDIA_URL }}{% thumbnail blog_post.featured_image 192 192 %}" alt="{{ blog_post.title }}">
+                </a>
+                {% endblock %}
+            {% endif %}
+            <!-- Summery -->
+            {% block blog_post_list_post_content %}
+            {% editable blog_post.content %}
+            {{ blog_post.description_from_content|safe }}
+            {% endeditable %}
+            {% endblock %}
+            <!-- /Summery -->
+            <p class="continue-reading">
+                <a href="{{ blog_post.get_absolute_url }}" title="Continue reading..." rel="bookmark">
+                    {% trans "Continue reading" %} <i class="fa fa-angle-double-right"> </i>
+                </a>
+            </p>
+        </div>
+        <div class="prepend-one two-col append-one last-col">
+            <aside>
+                <p class="author">
+                    {% with blog_post.user as author %}
+                    <span class="vcard">
+                        <i class="fa fa-user"></i>
+                        <a href="{% url "blog_post_list_author" author %}" class="fn url" rel="author" title="Show all {{ author.get_full_name|default:author.username }}'s entries">
+                            {{ author.get_full_name|default:author.username }}
+                        </a>
+                    </span>
+                    {% endwith %}
+                </p>
+                <p class="post-date" title="{{ blog_post.publish_date }}">
+                    <i class="fa fa-calendar"></i>
+                    {% blocktrans with sometime=blog_post.publish_date|date:'d F Y H:i'  %}{{ sometime }}{% endblocktrans %}
+                </p>
+                <p class="entry-tags">
+                {% with blog_post.categories.all as categories %}
+                {% if categories %}
+                    {% spaceless %}
+                    {% for category in categories %}
+                    <a href="{% url "blog_post_list_category" category.slug %}" class="btn btn-xs btn-primary btn-post-cats">
+                        {{ category }}</a>{% if not forloop.last %}{% endif %}
+                    {% endfor %}
+                    {% endspaceless %}
+                {% endif %}
+                {% endwith %}
+                </p>
+            </aside>
+        </div>
+    </article>
+                                {% endfor %}
+                                <!-- Navi -->
+                                {% pagination_for blog_posts %}
+                                {% if settings.COMMENTS_DISQUS_SHORTNAME %}
+                                {% include "generic/includes/disqus_counts.html" %}
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside id="sidebar" class="four-col last-col instapaper_ignore">
+                    {% block right_panel %}
+                        {% include "blog/includes/filter_panel.html" %}
+                    {% endblock %}
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+

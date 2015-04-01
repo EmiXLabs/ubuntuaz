@@ -1,0 +1,134 @@
+{% load pages_tags mezzanine_tags i18n future staticfiles compress %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %}>
+<head>
+<!--Metas-->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="{% block meta_keywords %}Ubuntu, Azerbaijan, Ubuntu-az, Community, İcma, Azərbaycan, Ubuntu ƏS, ƏS, Ubuntu Touch, LoCo{% endblock %}">
+    <meta name="title" content="{% block share_meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}">
+    <meta name="description" content="{% block meta_description %}Ubuntu Azerbaijan LoCo Homepage{% endblock %}">
+{% block meta_image %}
+    <meta property="og:title" content="{% block share_meta_title1 %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ubuntu-az.org" />
+    <meta property="og:image" content="{% static "images/logo.png" %}" />
+{% endblock %}
+<!--/Metas-->
+    <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
+<!--Icons-->
+    <link rel="shortcut icon" href="{% static "img/favicon.ico" %}" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{% static "img/apple-touch-icon-180x180.png" %}">
+    <link rel="icon" type="image/png" sizes="196x196" href="{% static "img/favicon-196x196.png" %}">
+    <link rel="canonical" hreflang="{{ LANGUAGE_CODE }}" href="https://www.ubuntu-az.org/">
+    {% comment %}
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    {% endcomment %}
+<!--/Icons-->
+{% ifinstalled mezzanine.blog %}
+<!--Feed-->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{% url "blog_post_feed" "rss" %}">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="{% url "blog_post_feed" "atom" %}">
+<!--/Feed-->
+{% endifinstalled %}
+<!--Styles-->
+    <link rel="stylesheet" type="text/css" media="all" href="//fonts.googleapis.com/css?family=Ubuntu" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
+    <link href="{% static "css/material.min.css" %}" rel="stylesheet">
+    <link href="{% static "css/ripples.min.css" %}" rel="stylesheet">
+{% compress css %}
+    {% block extra_css %}{% endblock %}
+    <link href="{% static "css/main.css" %}" rel="stylesheet">
+{% endcompress %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<!--Styles-->
+    <!--[if lt IE 9]>
+    <script src="{% static "js/html5shiv.js" %}"></script>
+    <script src="{% static "js/respond.min.js" %}"></script>
+    <![endif]-->
+{% block extra_head %}{% endblock %}
+</head>
+
+<body id="{% block body_id %}body{% endblock %}">
+{{ page_branch.is_current }}
+{% if not is_popup %}
+{% block top_nav %}
+<header class="banner global" role="banner">
+    <nav role="navigation" class="nav-primary nav-right">
+        <div class="logo">
+            <a class="logo-ubuntu" href="/">
+                <img src="{% static "images/logo.png" %}" alt="Ubuntu Azerbaijan Logo" height="36" width="36">
+            </a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a id="blog" href="/blog/" {% if "/blog/" in request.path %}class="active"{% endif %}>{% trans "Blog" %}</a></li>
+            <li><a id="ask" href="http://ask.ubuntu-az.org/">{% trans "Ask" %}</a></li>
+            <li><a id="about" href="/about/">{% trans "About"%}</a></li>
+            <li><a id="products" href="#">{% trans "Products" %}</a></li>
+            <li><a id="download" href="#">{% trans "Download" %}</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <form class="navbar-form navbar-right">
+                    <input class="form-control col-lg-8" placeholder="Search" type="text">
+                </form>
+            </li>
+            {% comment %}
+            <li>
+                <a id="nav-askquestion" href="">Ask Question</a>
+            </li>
+            {% endcomment %}
+        </ul>
+    </nav>
+</header>
+{% endblock %}
+{% endif %}
+
+<div class="container">
+  {% nevercache %}
+   {% if messages %}
+    <div class="messages">
+      {% for message in messages %}
+        <div class="alert alert-dismissable alert-{{ message.tags }}" data-alert="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            {{ message }}
+        </div>
+      {% endfor %}
+    </div>
+   {% endif %}
+  {% endnevercache %}
+</div>
+{% block top %}
+
+{% endblock %}
+
+{% block left_panel %}{% endblock %}
+
+{% block main %}{% endblock %}
+
+<!-- Footer -->
+{% page_menu "pages/menus/footer.html" %}
+<!-- /Footer -->
+<!-- Javascripts -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="{% static "js/ripples.min.js" %}"></script>
+<script src="{% static "js/material.min.js" %}"></script>
+{% block javascript %}{% endblock %}
+<script>
+    $(document).ready(function() {
+        $.material.init();
+    });
+</script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<!-- /Javascripts -->
+{% compress js %}
+{% block extra_js %}{% endblock %}
+{% include "includes/footer_scripts.html" %}
+<script src="{% static "js/main.js" %}"></script>
+{% endcompress %}
+</body>
+</html>
