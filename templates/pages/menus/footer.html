@@ -10,5 +10,24 @@
             <a href="http://www.ubuntu-az.org">&copy; 2015 {% trans "Ubuntu Azerbaijan LoCo" %}</a>
         </li>
     </ul>
+    <div class="lang-switcher">
+      <form action="{% url 'set_language' %}" method="post">
+        {% csrf_token %}
+        <input name="next" type="hidden" value="{{ redirect_to }}" />
+        <select id="language" name="language" dir="ltr" onchange="this.form.submit()">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% for language in languages %}
+                <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                {{ language.name_local }} ({{ language.code }})
+                </option>
+            {% endfor %}
+        </select>
+        <noscript>
+            <button type="submit">Go</button>
+        </noscript>
+      </form>
+    </div>
   </div>
 </footer>
