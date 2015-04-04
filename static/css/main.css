@@ -1118,7 +1118,8 @@ footer.global .legal {
   position: relative;
   clear: both;
   min-height: 40px;
-  width: 984px;
+  margin-right: 15%;
+  margin-left: 15%;
   background: transparent url("/static/img/logo-ubuntu-az-small.png") no-repeat scroll 100% 0px;
 }
 footer.global .legal p, footer.global .legal ul {
