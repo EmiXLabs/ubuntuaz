@@ -6,16 +6,16 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="{% block meta_keywords %}Ubuntu, Azerbaijan, Ubuntu-az, Community, İcma, Azərbaycan, Ubuntu ƏS, ƏS, Ubuntu Touch, LoCo{% endblock %}">
-    <meta name="title" content="{% block share_meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}">
+    <meta name="title" content="{% block share_meta_title %}{% trans "Home" %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}">
     <meta name="description" content="{% block meta_description %}Ubuntu Azerbaijan LoCo Homepage{% endblock %}">
 {% block meta_image %}
-    <meta property="og:title" content="{% block share_meta_title1 %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}" />
+    <meta property="og:title" content="{% block share_meta_title1 %}Home{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.ubuntu-az.org" />
     <meta property="og:image" content="{% static "images/logo.png" %}" />
 {% endblock %}
 <!--/Metas-->
-    <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
+    <title>{% block title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
 <!--Icons-->
     <link rel="shortcut icon" href="{% static "img/favicon.ico" %}" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{% static "img/apple-touch-icon-180x180.png" %}">
@@ -88,9 +88,9 @@
 {% endblock %}
 {% endif %}
 
+{% nevercache %}
+{% if messages %}
 <div class="container">
-  {% nevercache %}
-   {% if messages %}
     <div class="messages">
       {% for message in messages %}
         <div class="alert alert-dismissable alert-{{ message.tags }}" data-alert="alert">
@@ -99,15 +99,13 @@
         </div>
       {% endfor %}
     </div>
-   {% endif %}
-  {% endnevercache %}
 </div>
+{% endif %}
+{% endnevercache %}
+
 {% block top %}
-
 {% endblock %}
-
 {% block left_panel %}{% endblock %}
-
 {% block main %}{% endblock %}
 
 <!-- Footer -->

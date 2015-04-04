@@ -1,7 +1,9 @@
 {% extends "base.html" %}
-{% load mezzanine_tags keyword_tags %}
+{% load mezzanine_tags keyword_tags i18n %}
 
-{% block meta_title %}{{ page.meta_title }}{% endblock %}
+{% block share_meta_title %}{% trans page.meta_title %}{% endblock %}
+{% block share_meta_title1 %}{% trans page.meta_title %}{% endblock %}
+{% block meta_title %}{% trans page.meta_title %}{% endblock %}
 
 {% block meta_keywords %}{% metablock %}
 {% keywords_for page as keywords %}
@@ -12,11 +14,11 @@
 {% endmetablock %}{% endblock %}
 
 {% block meta_description %}{% metablock %}
-{{ page.description }}
+{% trans page.description %}
 {% endmetablock %}{% endblock %}
 
 {% block title %}
-{% editable page.title %}{{ page.title }}{% endeditable %}
+{% editable page.title %}{% trans page.title %}{% endeditable %}
 {% endblock %}
 
 {% block main %}

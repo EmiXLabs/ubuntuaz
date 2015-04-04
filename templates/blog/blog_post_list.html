@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load i18n future mezzanine_tags blog_tags keyword_tags disqus_tags %}
 
-{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Blog" %}{% endif %}{% endblock %}
+{% block meta_title %}{% if page %}{% trans page.meta_title %}{% else %}{% trans "Blog" %}{% endif %}{% endblock %}
 
 {% block meta_keywords %}{% metablock %}
 {% keywords_for page as keywords %}
@@ -12,12 +12,12 @@
 {% endmetablock %}{% endblock %}
 
 {% block meta_description %}{% metablock %}
-{{ page.description }}
+{% trans page.meta_description %}
 {% endmetablock %}{% endblock %}
 
 {% block title %}
 {% if page %}
-{% editable page.title %}{{ page.title }}{% endeditable %}
+{% editable page.title %}{% trans page.title %}{% endeditable %}
 {% else %}
 {% trans "Blog" %}
 {% endif %}
@@ -49,7 +49,7 @@
                 <div id="content eight-col no-margin-bottom">
                     <div class="box eight-col box-highlight">
                         <div class="subheader">
-                            <h1 id="top-questions">
+                            <h1 id="page-sub-title">
                             {% if tag or category or year or month or author %}
                                 {% block blog_post_list_filterinfo %}
                                 {% if tag %}

@@ -1,11 +1,30 @@
 {% extends "pages/page.html" %}
 
-{% load mezzanine_tags %}
+{% load mezzanine_tags i18n %}
 
 {% block main %}{{ block.super }}
-<section  class="container">
+<section class="content" id="page-content">
+    <div class="row">
+        <div class="inner-wrapper">
+            <div id="content eight-col no-margin-bottom">
+                <div class="box eight-col box-highlight">
+                    <div class="subheader">
+                        <h1 id="page-sub-title">
+                            {% trans page.title %}
+                        </h1>
+                    </div>
+                    <div class="wrapper">
+                        <div class="page-content">
+                            <article class="row no-border no-padding-bottom">
 {% editable page.richtextpage.content %}
-{{ page.richtextpage.content|richtext_filters|safe }}
+{% trans page.richtextpage.content|richtext_filters|safe %}
 {% endeditable %}
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 {% endblock %}
