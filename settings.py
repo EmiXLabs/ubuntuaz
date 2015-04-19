@@ -272,7 +272,6 @@ INSTALLED_APPS = (
     "mezzanine.forms",
     "mezzanine.pages",
     "compressor",
-    "analytics",
 )
 
 # List of processors used by RequestContext to populate the context.
@@ -321,6 +320,11 @@ MIDDLEWARE_CLASSES = (
 # at the moment we are using custom forks of them.
 PACKAGE_NAME_FILEBROWSER = "filebrowser_safe"
 PACKAGE_NAME_GRAPPELLI = "grappelli_safe"
+
+# Google account:
+GOOGLE_USERNAME = 'user@example.com'
+GOOGLE_PASSWORD = 'userpass'
+ANALYTICS_PROFILE_ID = 'ga:001002003'
 
 #########################
 # OPTIONAL APPLICATIONS #

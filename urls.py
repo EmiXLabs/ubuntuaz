@@ -10,7 +10,7 @@ from django.contrib.sitemaps import GenericSitemap
 from mezzanine.blog.models import BlogPost
 from mezzanine.pages.models import RichTextPage
 from mezzanine.forms.models import Form
-from analytics import views as analytics_view
+import analytics as analytics_view
 
 
 admin.autodiscover()

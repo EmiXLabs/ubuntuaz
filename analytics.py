@@ -1,4 +1,4 @@
-from django.conf import settings
+import settings
 from django.http import HttpResponse
 from gdata.analytics import client
 import gdata
@@ -6,7 +6,6 @@ import json
 import datetime
 
 PROJECT_NAME = 'Ubuntu Azerbaijan'
-
 
 def get_ga_client(sdate, edate, metrics, filters):
     my_client = gdata.analytics.client.AnalyticsClient(source=PROJECT_NAME)
@@ -48,4 +47,3 @@ def show(request):
     end_text = '{:04d}-{:02d}-{:02d}'.format(end.year, end.month, end.day)
     data = get_ga_data(start_text, end_text, 'ga:pageviews', filters)
     return HttpResponse(json.dumps({'count': data}), content_type="application/json")
-    # return HttpResponse()
