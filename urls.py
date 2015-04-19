@@ -10,6 +10,7 @@ from django.contrib.sitemaps import GenericSitemap
 from mezzanine.blog.models import BlogPost
 from mezzanine.pages.models import RichTextPage
 from mezzanine.forms.models import Form
+from analytics import views as analytics_view
 
 
 admin.autodiscover()
@@ -57,6 +58,9 @@ urlpatterns += patterns('',
     (r'^i18n/', include('django.conf.urls.i18n')),
 
     url("^$", direct_to_template, {"template": "index.html"}, name="home"),
+
+    # GoogleAnalytics Data API
+    url(r'^analytics/$', analytics_view.show),
 
     # HOMEPAGE AS AN EDITABLE PAGE IN THE PAGE TREE
     # ---------------------------------------------
