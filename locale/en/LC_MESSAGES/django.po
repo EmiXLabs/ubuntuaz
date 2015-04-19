@@ -98,46 +98,46 @@ msgstr ""
 msgid "Site permissions"
 msgstr ""
 
-#: settings.py:122
+#: settings.py:123
 msgid "English"
 msgstr ""
 
-#: settings.py:123
+#: settings.py:124
 msgid "Azerbaijani"
 msgstr ""
 
-#: templates/base.html:69 templates/blog/blog_post_list.html:4
-#: templates/blog/blog_post_list.html:22 templates/blog/blog_post_list.html:77
-msgid "Blog"
-msgstr ""
-
-#: templates/base.html:70
-msgid "Ask"
-msgstr ""
-
-#: templates/base.html:71
-msgid "About"
-msgstr ""
-
-#: templates/base.html:72
-msgid "Products"
-msgstr ""
-
-#: templates/base.html:73
-msgid "Download"
-msgstr ""
-
-#: templates/base.html:78 templates/includes/search_form.html:5
-msgid "Search"
-msgstr ""
-
-#: templates/index.html:3 templates/index.html.py:4
+#: templates/base.html:9 templates/index.html:3 templates/index.html.py:4
 #: templates/search_results.html:13 templates/pages/menus/breadcrumb.html:4
 #: templates/pages/menus/breadcrumb.html:9
 #: templates/pages/menus/footer_tree.html:11
 #: templates/pages/menus/mobile.html:10 templates/pages/menus/primary.html:8
 #: templates/pages/menus/tree.html:9
 msgid "Home"
+msgstr ""
+
+#: templates/base.html:75 templates/blog/blog_post_list.html:4
+#: templates/blog/blog_post_list.html:22 templates/blog/blog_post_list.html:77
+msgid "Blog"
+msgstr ""
+
+#: templates/base.html:76
+msgid "Ask"
+msgstr ""
+
+#: templates/base.html:77
+msgid "Products"
+msgstr ""
+
+#: templates/base.html:78
+msgid "Download"
+msgstr ""
+
+#: templates/base.html:79
+msgid "About"
+msgstr ""
+
+#: templates/base.html:84 templates/includes/search_form.html:5
+msgid "Search"
 msgstr ""
 
 #: templates/index.html:15
@@ -218,20 +218,24 @@ msgid_plural "%(comments_count)s comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: templates/blog/blog_post_detail.html:90
+#: templates/blog/blog_post_detail.html:79
+msgid "Views"
+msgstr ""
+
+#: templates/blog/blog_post_detail.html:93
 #: templates/blog/includes/filter_panel.html:75
 msgid "Tags"
 msgstr ""
 
-#: templates/blog/blog_post_detail.html:112
+#: templates/blog/blog_post_detail.html:115
 msgid "Share on Facebook"
 msgstr ""
 
-#: templates/blog/blog_post_detail.html:113
+#: templates/blog/blog_post_detail.html:116
 msgid "Twitter"
 msgstr ""
 
-#: templates/blog/blog_post_detail.html:145
+#: templates/blog/blog_post_detail.html:148
 msgid "Related posts"
 msgstr ""
 
