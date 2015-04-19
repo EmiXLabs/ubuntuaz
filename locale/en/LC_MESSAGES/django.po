@@ -222,6 +222,10 @@ msgstr[1] ""
 msgid "Views"
 msgstr ""
 
+#: templates/blog/blog_post_detail.html:79
+msgid "loading..."
+msgstr ""
+
 #: templates/blog/blog_post_detail.html:93
 #: templates/blog/includes/filter_panel.html:75
 msgid "Tags"

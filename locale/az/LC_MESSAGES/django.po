@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mezzanine\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-20 02:52+0300\n"
+"POT-Creation-Date: 2015-04-20 02:58+0300\n"
 "PO-Revision-Date: 2015-01-25 23:38+0200\n"
 "Last-Translator: Emin Mastizada <emin@mastizada.com>\n"
 "Language-Team: Azerbaijani <az@li.org>\n"
@@ -248,6 +248,10 @@ msgstr[1] "%(comments_count)s şərh"
 #: templates/blog/blog_post_detail.html:79
 msgid "Views"
 msgstr "Baxış"
+
+#: templates/blog/blog_post_detail.html:79
+msgid "loading..."
+msgstr "yüklənir..."
 
 #: templates/blog/blog_post_detail.html:93
 #: templates/blog/includes/filter_panel.html:75
