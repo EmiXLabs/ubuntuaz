@@ -89,8 +89,8 @@
                         {% block blog_post_list_post_links %}
                         {% keywords_for blog_post as tags %}
                         {% if tags %}
-                        <div>
-                            <i class="icon-tags"></i> {% trans "Tags" %}:
+                        <div class="blog-show-tags">
+                            <span class="h3"><i class="fa fa-tags"></i> {% trans "Tags" %}</span>:
                             {% spaceless %}
                           {% for tag in tags %} 
                             <a href="{% url "blog_post_list_tag" tag.slug %}" class="btn btn-xs btn-primary">{{ tag }}</a>
