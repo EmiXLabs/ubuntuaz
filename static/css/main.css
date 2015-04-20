@@ -70,49 +70,6 @@ header.banner .nav-primary {
     margin: 0 auto;
     overflow: hidden;
 }
-header.banner .nav-primary ul {
-    border-right: 1px solid #ed6637;
-    float: left;
-    margin: 0;
-    position: relative;
-}
-header.banner .nav-primary ul li {
-    border-left: 1px solid #c64012;
-    float: left;
-    list-style-image: none;
-    margin: 0;
-    text-indent: 0;
-    vertical-align: bottom;
-}
-header.banner .nav-primary ul li:last-child {
-    border-right: 1px solid #c64012;
-}
-header.banner .nav-primary ul li a:link, header.banner .nav-primary ul li a:visited {
-    font-size: 14px;
-    border-left: 1px solid #ec5b29;
-    color: #fff;
-    display: block;
-    margin-bottom: 0;
-    padding: 14px 14px 13px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    -webkit-font-smoothing: subpixel-antialiased;
-    -moz-font-smoothing: subpixel-antialiased;
-    -o-font-smoothing: subpixel-antialiased;
-    font-smoothing: subpixel-antialiased;
-}
-header.banner .nav-primary ul a.active {
-    background: #B83A10;
-    border-left: 1px solid #ec5b29;
-}
-header.banner .nav-primary ul li a:hover {
-    background: #e1662f;
-    border-top: 0;
-    -moz-box-shadow: inset 0 2px 2px -2px #777;
-    -webkit-box-shadow: inset 0 2px 2px -2px #777;
-    box-shadow: inset 0 2px 2px -2px #777;
-}
 #main-navigation-link {
     display: none;
 }
@@ -135,11 +92,6 @@ header.banner .nav-toggle {
 header.banner .no-script {
     display: none;
 }
-header.banner nav ul {
-    background-color: #f0f0f0;
-    display: none;
-    float: left;
-}
 header.banner .nav-primary.active {
     -moz-box-shadow: 0 1px 2px 1px rgba(120, 120, 120, 0.2);
     -webkit-box-shadow: 0 1px 2px 1px rgba(120, 120, 120, 0.2);
@@ -149,35 +101,6 @@ header.banner .nav-primary.active {
 }
 header nav ul.active {
     display: block;
-}
-header.banner .nav-primary ul li, header.banner .nav-primary ul li a:link, header.banner .nav-primary ul li a:visited, header.banner .nav-primary ul li a:active {
-    display: block;
-    padding: 0;
-    margin: 0;
-    border: none;
-}
-header.banner .nav-primary ul li a:hover {
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    background-color: #d0d0d0;
-}
-header.banner .nav-primary ul li a.active {
-    background-color: #ddd;
-}
-header.banner .nav-primary ul li {
-    border-bottom: 1px solid #F2F2F4;
-    font-size: 16px;
-}
-header.banner .nav-primary ul li:last-child {
-    border: 0;
-}
-header.banner nav.nav-primary ul li a:link, header.banner .nav-primary ul li a:visited, header.banner .nav-primary ul li a:hover, header.banner .nav-primary ul li a:active {
-    padding: 14px 14px 14px;
-    text-align: left;
-}
-header.banner nav.nav-primary ul.active li ul {
-    display: none;
 }
 #menu.active:after {
     background-image: url(//assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/nav-arrow.svg);
@@ -329,55 +252,6 @@ header nav ul.active {
 header nav ul.active li:last-child a:link, header nav ul.active li:last-child a:visited {
     border-bottom: 0;
 }
-header.banner .nav-primary ul {
-    position: relative;
-    width: 100%}
-header.banner .nav-primary ul li.active a:link, header.banner .nav-primary ul li.active a:visited {
-    color: #333;
-    font-weight: 700;
-}
-header.banner .nav-primary ul li, header.banner .nav-primary ul li a:link, header.banner .nav-primary ul li a:visited, header.banner .nav-primary ul li a:active {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: transparent;
-    border: none;
-    display: block;
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-    width: 100%}
-header.banner .nav-primary ul li a:link, header.banner .nav-primary ul li a:visited, header.banner .nav-primary ul li a:hover, header.banner .nav-primary ul li a:active {
-    background-color: #f0f0f0;
-    border-bottom: 1px solid #d4d7d4;
-    color: #333333;
-    font-size: 1em;
-}
-header.banner .nav-primary ul li:nth-last-child(-n+2) a:link, header.banner .nav-primary ul li:nth-last-child(-n+2) a:visited {
-    border: 0;
-}
-header.banner .nav-primary ul li a:hover {
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    background: #f8f8f8;
-}
-header.banner .nav-primary ul li a.active {
-    background-color: #ddd;
-}
-header.banner nav.nav-primary ul li a:link, header.banner .nav-primary ul li a:visited, header.banner .nav-primary ul li a:hover, header.banner .nav-primary ul li a:active {
-    padding: 8px 10px;
-    text-align: left;
-}
-header.banner .nav-primary ul li {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: transparent;
-    border-bottom: 0;
-    border-right: 1px solid #d4d7d4;
-    float: left;
-    width: 50%}
 .nav-secondary {
     background: #fff;
 }
@@ -584,61 +458,37 @@ header.banner .nav-toggle {
 html.no-svg header.banner .nav-toggle, .opera-mini header.banner .nav-toggle {
     background-image: url("//assets.ubuntu.com/sites/ubuntu/latest/u/img/icons/navigation-menu-plain.png");
 }
-}@media only screen and (min-width: 768px) {
-    header.banner .nav-primary ul li {
-    border-bottom: 0;
-}
 }@media only screen and (min-width: 769px) {
     header.banner {
-}
-header.banner nav.nav-primary {
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-bottom: 0;
-}
-header.banner .nav-toggle {
-    display: none;
-}
-header.banner nav ul {
-    background-color: transparent;
-    display: block;
-}
-header.banner .nav-primary ul li {
-    border-left: 1px solid #C64012;
-}
-header.banner .nav-primary ul li a:active, header.banner .nav-primary ul li a:hover, header.banner .nav-primary ul li a:visited, header.banner nav.nav-primary ul li a:link {
-    border-left: 1px solid #EC5B29;
-}
-header.banner .nav-primary ul li:last-child {
-    border-right: 1px solid #C64012;
-    border-left: 1px solid #C64012;
-}
-header.banner .nav-primary ul li a.active {
-    background-color: #B83A10;
-}
-header.banner .nav-primary ul li a:hover {
-    background-color: #E1662F;
-}
-.nav-secondary ul:last-child li:last-child {
-    padding-bottom: 10px;
-}
-.nav-secondary ul.breadcrumb li, .nav-secondary ul.second-level-nav li, .nav-secondary ul.third-level-nav li {
-    margin-right: 15px;
-}
-.nav-secondary ul.breadcrumb {
-    float: left;
-}
-.nav-secondary ul.breadcrumb li {
-    margin-bottom: 10px;
-}
-.nav-secondary ul {
-    float: none;
-    margin-bottom: 0;
-}
-.nav-secondary ul li {
-    margin-bottom: 5px;
-}
+    }
+    header.banner nav.nav-primary {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-bottom: 0;
+    }
+    header.banner .nav-toggle {
+        display: none;
+    }
+    .nav-secondary ul:last-child li:last-child {
+        padding-bottom: 10px;
+    }
+    .nav-secondary ul.breadcrumb li, .nav-secondary ul.second-level-nav li, .nav-secondary ul.third-level-nav li {
+        margin-right: 15px;
+    }
+    .nav-secondary ul.breadcrumb {
+        float: left;
+    }
+    .nav-secondary ul.breadcrumb li {
+        margin-bottom: 10px;
+    }
+    .nav-secondary ul {
+        float: none;
+        margin-bottom: 0;
+    }
+    .nav-secondary ul li {
+        margin-bottom: 5px;
+    }
 }@media only screen and (min-width: 984px) {
     header.banner {
 }
@@ -651,8 +501,6 @@ header.banner .nav-primary, #nav-global .nav-global-wrapper {
 header.banner .nav-primary.nav-right .logo-ubuntu {
     margin-left: 0;
 }
-}header.banner .nav-primary ul {
-    position: static;
 }
 header.banner .nav-primary li ul {
     -moz-box-shadow: 0 2px 2px -1px #777;
@@ -1278,4 +1126,38 @@ footer.global .inline li {
 }
 .blog-show-tags {
     margin-top: 20px;
+}
+header.banner .nav-primary ul {
+    border-right: 1px solid #ED6637;
+}
+header.banner .nav-primary ul li {
+    border-left: 1px solid #C64012;
+    border-bottom: 0px none;
+}
+header.banner .nav-primary ul li:last-child {
+    border: 0px none;
+    border-right: 1px solid #C64012;
+    border-left: 1px solid #C64012;
+}
+header.banner .nav-primary ul li a:link, header.banner .nav-primary ul li a:visited {
+    border-left: 1px solid #ec5b29;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-font-smoothing: subpixel-antialiased;
+    -o-font-smoothing: subpixel-antialiased;
+    font-smoothing: subpixel-antialiased;
+}
+header.banner .nav-primary ul a.active {
+    background: #B83A10;
+    border-left: 1px solid #ec5b29;
+}
+header.banner .nav-primary ul li a:hover {
+    background: #F1F1F1;
+    color: #000;
+    border-top: 0;
+    -moz-box-shadow: inset 0 2px 2px -2px #777;
+    -webkit-box-shadow: inset 0 2px 2px -2px #777;
+    box-shadow: inset 0 2px 2px -2px #777;
+}
+.navbar-toggle .icon-bar {
+    border-color: #FFF;
 }

@@ -5425,7 +5425,7 @@ legend {
 .navbar .navbar-toggle:focus {
   background-color: transparent;
 }
-.navbar .navbar-toggle .icon-bar {
+.navbar-toggle .icon-bar {
   background-color: inherit;
   border: 1px solid;
 }
