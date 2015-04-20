@@ -11,7 +11,7 @@
     <div class="row">
         <div class="inner-wrapper">
             <div class="box eight-col box-highlight home-show">
-                <div class="six-col">
+                <div class="six-col home-message">
                     <h1 class="home-title">{% trans "Meet Ubuntu" %}</h1>
                     <p class="home-intro">{% trans "Fast, free and incredibly easy to use, the Ubuntu operating system powers millions of desktop PCs, laptops and servers around the world." %}</p>
                     <p>
@@ -31,7 +31,7 @@
   <div class="row">
     <div class="inner-wrapper">
       <div class="box eight-col box-highlight">
-            <div class="three-col">
+            <div class="three-col home-latest-scroller">
                 <h3>{% trans "Latest Posts" %}</h3>
                 <p>{% trans "Ubuntu Azerbaijan LoCo News" %}</p>
                 <p>{% trans "Latest news releated to Ubuntu Linux." %}</p>
@@ -40,7 +40,7 @@
                     <a class="btn btn-warning" href="#scroller" data-slide="next"><i class="fa fa-toggle-right"></i></a>
                 </div>
             </div>
-            <div class="six-col">
+            <div class="six-col home-post-items">
                 <div id="scroller" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="item active">
@@ -49,7 +49,7 @@
                               {% blog_recent_posts 5 as recent_posts %}
                                {% if recent_posts %}
                                 {% for recent_post in recent_posts %}
-                                  <div class="col-xs-3">
+                                  <div class="col-xs-3 home-post-item">
                                    <a href="{{ recent_post.get_absolute_url }}">
                                     <div class="recent-post-item">
                                       <div class="item-inner">
